@@ -20,7 +20,7 @@ alias GreetmeBash="bash /home/xxsansxv/.config/fish/GreetMeInBash.sh"
 #
 
 function fish_greeting
-    GreetmeBash
+    GreetmeBash greet
 end
 
 # thefuck --alias | source

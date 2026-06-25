@@ -71,7 +71,7 @@ case "$1" in
       -e "s/\x1b\[0m/<\/span>/g")
     
     echo "Trying to send to notify-send..."
-    notify-send "XxCachyxV said:" "$BashGreetedMakoGreetedU"
+    DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$UID/bus" notify-send "XxCachyxV said:" "$BashGreetedMakoGreetedU"
     ;;
 
   greet)

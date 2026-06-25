@@ -71,7 +71,7 @@ case "$1" in
       -e "s/\x1b\[0m/<\/span>/g")
     
     echo "Trying to send to notify-send..."
-    notify-send "Hello :)" "$BashGreetedMakoGreetedU"
+    notify-send "XxCachyxV said:" "$BashGreetedMakoGreetedU"
     ;;
 
   greet)

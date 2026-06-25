@@ -83,3 +83,9 @@ hl.window_rule({
     match = { class = "mpv" },
     float = true,
 })
+
+hl.window_rule({
+    name = "Harunanana",
+    match = { class = "org.kde.haruna" },
+    float = true,
+})

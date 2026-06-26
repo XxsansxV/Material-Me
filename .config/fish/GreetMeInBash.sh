@@ -6,6 +6,8 @@ if [ "$EUID" -eq 0 ]; then
   echo -e "Sudo... you have the full control of this computer? Who decided that?..."
   echo -e "I don't really understand why you're even running this is sudo, bruh. This script literally doesn't need sudo and even if you run sudo it would be no different, in fact, worse."
   echo -e "I won't crash out, just know that YOU AIN'T RUNNING ME IN SUDO."
+  echo ""
+  echo -e "(You probably had to type sudo bash .config/fish/GreetMeInBash.sh, btw. you could've just used GreetmeBash. Way shorter and you can actually run it, duh.)"
 fi
 
 # Colors bro
@@ -38,13 +40,16 @@ greet_function() {
   greetings+=("${CYAN}Hyprlarp${RESET}")
   greetings+=(":v")
   greetings+=("That one guy who is ${RED}ACTUALLY${RESET} worse than the 67 kid:")
-  greetings+=("DO NOT BUY THIS KEYBO-")
+  greetings+=("DO NOT BUY THIS KEYBOARD. WHEN YOU PRESS WASD, IT'S NORMAL. BUT WHEN I PRESS SPACE-")
   greetings+=("[sudo] password for XxcharaxV:")
   greetings+=("Stay ${YELLOW}DETERMINED${RESET}")
   greetings+=("Du sollte einfach ${YELLOW}spazz machen :)${RESET}")
   greetings+=("${MAGENTA}DU BIST GUT GENUGGGG${RESET}")
   greetings+=("${CYAN}'This entire time... it was a symlink?'${RESET} ${RED}'Always has been.'${RESET}")
   greetings+=("Save the ${RED}sin,${RESET} face the ${MAGENTA}E.G.O${RESET}")
+  greetings+=("Hey, ${YELLOW}it's gonna be alright :)${RESET}")
+  greetings+=("sudo systemctl mask systemd-haters.service")
+  greetings+=("Stand proud. You're good.")
 
   # this just counts how many items there are in the greetings array, then picks one of the indexes.
   howmanyGreets=${#greetings[@]}

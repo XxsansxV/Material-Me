@@ -50,6 +50,19 @@ greet_function() {
   greetings+=("Hey, ${YELLOW}it's gonna be alright :)${RESET}")
   greetings+=("sudo systemctl mask systemd-haters.service")
   greetings+=("Stand proud. You're good.")
+  greetings+=("The only bad thing about Linux is how ${MAGENTA}hx${RESET} is now ${MAGENTA}helix${RESET}")
+  greetings+=("You don't have to use the terminal today! (citation needed)")
+  greetings+=("A computer is like an AC, it becomes useless when you open Windows... something like that.")
+  greetings+=("ChatGPT, who is ${YELLOW}Json?${RESET}")
+  greetings+=("And hopefully, they'll live ${YELLOW}happily ever after.${RESET}")
+  greetings+=("Enjoy your computer! :>")
+  greetings+=("Not everyone has to understand. Just get at least one person to, alright?")
+
+  # from reddit. seems like they didn't  like the question a lot, lol. how it works is greetings+=("messagehere") # the reddit user
+  greetings+=("If the sun rises at midnight, pray you do not see tomorrow") # un-important-human
+  greetings+=("Family dissapointment is temporary, C Programming Language is eternal") # No_Pollution6135
+  greetings+=("Scripting fun projects is entertaining, now get back to work.") # Superfly-Samurai
+  greetings+=("What other thinks of you is none of your fucking business.") # Striking_Snail
 
   # this just counts how many items there are in the greetings array, then picks one of the indexes.
   howmanyGreets=${#greetings[@]}
@@ -84,7 +97,7 @@ case "$1" in
       -e "s/\x1b\[0m/<\/span>/g")
     
     echo "Trying to send to notify-send..."
-    DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$UID/bus" notify-send "$(hostname) said:" "$BashGreetedMakoGreetedU"
+    DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$UID/bus" notify-send "$(hostname) said:" "$BashGreetedMakoGreetedU" -t 300000
     ;;
 
   greet)

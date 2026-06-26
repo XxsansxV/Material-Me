@@ -1,14 +1,22 @@
 #!/usr/bin/env bash
  
-greet_function() {
-  # Colors bro
-  RED='\e[31m'
-  GREEN='\e[32m'
-  YELLOW='\e[33m'
-  CYAN='\e[36m'
-  MAGENTA='\e[35m'
-  RESET='\e[0m'
+# We shall prevent sudo-kun from larping with sudo.
+if [ "$EUID" -eq 0 ]; then
+  echo ""
+  echo -e "Sudo... you have the full control of this computer? Who decided that?..."
+  echo -e "I don't really understand why you're even running this is sudo, bruh. This script literally doesn't need sudo and even if you run sudo it would be no different, in fact, worse."
+  echo -e "I won't crash out, just know that YOU AIN'T RUNNING ME IN SUDO."
+fi
 
+# Colors bro
+RED='\e[31m'
+GREEN='\e[32m'
+YELLOW='\e[33m'
+CYAN='\e[36m'
+MAGENTA='\e[35m'
+RESET='\e[0m'
+
+greet_function() {
   # Kickass easter egg
   # Nah, I just thought you couldn't create an empty array so i did this instead, lol.
   greetings=("${YELLOW}Oops!${RESET} you found me! ${RED}ඞ${RESET}")
@@ -71,12 +79,14 @@ case "$1" in
       -e "s/\x1b\[0m/<\/span>/g")
     
     echo "Trying to send to notify-send..."
-    DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$UID/bus" notify-send "XxCachyxV said:" "$BashGreetedMakoGreetedU"
+    DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$UID/bus" notify-send "$(hostname) said:" "$BashGreetedMakoGreetedU"
     ;;
 
   greet)
     # echo "Running greet_function..."
     echo ""
+    echo -e "[ ${CYAN}$(hostname)${RESET} said: ]"
+    # echo ""    
     greet_function
     echo ""
     # echo "that SHOULD'VE worked. If not, idk man"

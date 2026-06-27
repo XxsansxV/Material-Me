@@ -6,6 +6,7 @@ local programs = require("confd.programs")
 
 local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 
+hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind("print", hl.dsp.exec_cmd(programs.screenshot .. " gui"))
 hl.bind(mainMod .. " + period", hl.dsp.exec_cmd(programs.emojipicker))
 hl.bind(mainMod .. " + SHIFT + V", hl.dsp.exec_cmd("cliphist list | wofi --dmenu | cliphist decode | wl-copy"))

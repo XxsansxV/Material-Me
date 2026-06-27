@@ -5,14 +5,14 @@
     "keybind" : "l"
 }
 {
-    "label" : "hibernate",
-    "action" : "systemctl hibernate",
-    "text" : "Hibernate",
+    "label" : "saysmt",
+    "action" : "bash ~/.config/fish/GreetMeInBash.sh notify",
+    "text" : "Say something",
     "keybind" : "h"
 }
 {
     "label" : "logout",
-    "action" : "loginctl terminate-user $USER",
+    "action" : "hyprctl dispatch 'hl.dsp.exit()'",
     "text" : "Logout",
     "keybind" : "e"
 }

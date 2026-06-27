@@ -73,12 +73,12 @@ button:hover {
 
 #sleep {
   border-top-right-radius: 200px;
-  background-image: image(url("./icons/suspend.png"));
+  background-image: image(url("./icons/sleep.png"));
 }
 
-#hibernate {
+#saysmt {
   border-bottom-left-radius: 200px;
-  background-image: image(url("./icons/hibernate.png"));
+  background-image: image(url("./icons/saysmt.png"));
 }
 
 #shutdown {

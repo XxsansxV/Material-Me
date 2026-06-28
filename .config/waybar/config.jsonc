@@ -50,7 +50,7 @@
     "modules": [
       "group/audisplay",
       "group/networkbluetooth",
-      "custom/notification",
+      // "custom/notification",
       "battery",
       "tray",
       "custom/power"

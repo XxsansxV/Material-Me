@@ -57,6 +57,7 @@ greet_function() {
   greetings+=("And hopefully, they'll live ${YELLOW}happily ever after.${RESET}")
   greetings+=("Enjoy your computer! :>")
   greetings+=("Not everyone has to understand. Just get at least one person to, alright?")
+  greetings+=("Problems | 2>dev/null")
 
   # from reddit. seems like they didn't  like the question a lot, lol. how it works is greetings+=("messagehere") # the reddit user
   greetings+=("If the sun rises at midnight, pray you do not see tomorrow") # un-important-human

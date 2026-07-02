@@ -2,7 +2,7 @@
 
 :root {
   --zen-main-browser-background: var(--secondary-container);
-  --zen-themed-toolbar-bg-transparent: rgb(var(--secondary-container) / 0.5) !important;
+  --zen-themed-toolbar-bg-transparent: rgba(var(--secondary-container), 0.5) !important;
   --zen-primary-color: var(--primary) !important;
 }
 

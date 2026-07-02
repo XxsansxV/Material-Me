@@ -1,0 +1,10 @@
+@import url('./colors.css');
+
+:root {
+  --zen-main-browser-background: var(--surface-container-highest);
+  --zen-themed-toolbar-bg-transparent: var(--surface-container-highest) !important;
+}
+
+.browserStack browser {
+  background-color: var(--surface-container-highest) !important;
+}

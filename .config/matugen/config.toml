@@ -42,7 +42,12 @@ output_path = "~/.config/hypr/hyprlockcolors.conf"
 input_path = "~/.config/matugen/templates/rgba-definecolors-css.template"
 output_path = "~/.config/swaync/colors.css"
 
+[templates.zen]
+input_path  = "~/.config/matugen/templates/rgb-rootcolors.css.template"
+output_path = "~/.cache/zen/t475vcdf.Default (release)/chrome/colors.css"
+
 # unused gtk4 block, DO NOT USE, THIS CAUSES MATUGEN TO FAIL as gtk.css in the .config folder is a symlink to kde breeze which already syncs anyways, duh.
 # [templates.gtk4]
 # input_path = "~/.config/matugen/templates/gtk4-colors.css.template"
 # output_path = "~/.config/gtk-4.0/gtk.css"
+

@@ -1,36 +1,36 @@
 {
     "label" : "lock",
     "action" : "loginctl lock-session",
-    "text" : "Lock",
+    "text" : "[L]ock",
     "keybind" : "l"
 }
 {
     "label" : "saysmt",
     "action" : "bash ~/.config/fish/GreetMeInBash.sh notify",
-    "text" : "Say something",
-    "keybind" : "h"
+    "text" : "say so[M]ething",
+    "keybind" : "m"
 }
 {
     "label" : "logout",
     "action" : "hyprctl dispatch 'hl.dsp.exit()'",
-    "text" : "Logout",
-    "keybind" : "e"
+    "text" : "l[O]gout",
+    "keybind" : "o"
 }
 {
     "label" : "shutdown",
     "action" : "systemctl poweroff",
-    "text" : "Shutdown",
+    "text" : "[S]hutdown",
     "keybind" : "s"
 }
 {
     "label" : "sleep",
     "action" : "systemctl suspend",
-    "text" : "Sleep",
-    "keybind" : "u"
+    "text" : "sl[E]ep",
+    "keybind" : "e"
 }
 {
     "label" : "reboot",
     "action" : "systemctl reboot",
-    "text" : "Reboot",
+    "text" : "[R]eboot",
     "keybind" : "r"
 }

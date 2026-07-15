@@ -62,6 +62,16 @@ button:hover {
 /* background-image: image(url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png")); */
 /* } */
 
+/* #lock, */
+/* #logout, */
+/* #sleep, */
+/* #saysmt, */
+/* #shutdown, */
+/* #reboot { */
+/* min-width: 250px; */
+/* min-height: 250px; */
+/* } */
+
 #lock {
   border-top-left-radius: 200px;
   background-image: image(url("./icons/lock.png"));

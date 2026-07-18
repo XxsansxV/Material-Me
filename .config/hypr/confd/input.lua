@@ -19,6 +19,14 @@ hl.config({
             disable_while_typing = false,
         },
     },
+    gestures = {
+        workspace_swipe_distance = 700,
+        workspace_swipe_cancel_ratio = 0.2,
+        workspace_swipe_min_speed_to_force = 5,
+        workspace_swipe_direction_lock = true,
+        workspace_swipe_direction_lock_threshold = 10,
+        workspace_swipe_create_new = true,  
+    },
 })
 
 hl.gesture({
@@ -27,6 +35,21 @@ hl.gesture({
     action    = "workspace",
 })
 
+hl.gesture({
+    fingers   = 3,
+    direction = "up",
+    action    = function()
+        hl.plugin.hymission.open()
+    end
+})
+
+hl.gesture({
+    fingers   = 3,
+    direction = "down",
+    action    = function()
+        hl.plugin.hymission.close()
+    end
+})
 -- Example per-device config
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Devices/ for more
 -- hl.device({

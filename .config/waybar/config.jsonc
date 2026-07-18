@@ -51,6 +51,7 @@
       "group/audisplay",
       "group/networkbluetooth",
       // "custom/notification",
+      "custom/dnd",
       "battery",
       "tray",
       "custom/power"
@@ -77,7 +78,8 @@
     "warp-on-scroll": false,
     "on-scroll-up": "hyprctl dispatch 'hl.dsp.focus({workspace=\"e+1\"})'",
     "on-scroll-down": "hyprctl dispatch 'hl.dsp.focus({workspace=\"e-1\"})'",
-    // "on-click": "hyprctl dispatch 'hl.dsp.focus({workspace=\"id\"})'",
+    "on-click": "activate",
+    // "on-click": "hyprctl eval 'hl.dispatch(hl.dsp.focus({ workspace = \"{id}\"}))'",
     "format": "{name}"
     // "format-icons": {
     //     // "1": "",
@@ -307,6 +309,14 @@
     "escape": true,
     "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
     // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+  },
+  "custom/dnd": {
+    "return-type": "json",
+    "exec": "$HOME/.config/mako/makodndhelper.sh",
+    "on-click": "makoctl mode -t do-not-disturb && pkill -RTMIN+8 waybar",
+    "signal": 8,
+    "interval": 5,
+    "tooltip": true
   },
   "custom/power": {
     "format": "",

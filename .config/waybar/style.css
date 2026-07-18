@@ -168,6 +168,7 @@ button:hover {
 #tlp-pd,
 #custom-notification,
 #custom-power,
+#custom-dnd,
 #mpd {
   padding: 0 10px;
   color: @on_surface;
@@ -178,7 +179,8 @@ button:hover {
 #network:hover,
 #custom-notification:hover,
 #bluetooth:hover,
-#battery:hover
+#battery:hover,
+#custom-dnd:hover
 
 /* #custom-power:hover, */
   {
@@ -246,7 +248,8 @@ tooltip {
 }
 
 #battery,
-#custom-notification {
+#custom-notification,
+#custom-dnd {
   padding: 0 10px;
   margin: 0 2px;
   background-color: @surface_container_highest;

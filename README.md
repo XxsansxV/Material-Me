@@ -16,6 +16,7 @@ This collection containeth not the whole of my configuration, for certain pieces
 * **Mako**
 * **Wofi**
 * **Wlogout**
+* **Zen Browser**
 
 The style thereof beareth some likeness unto **Google Material Design**, from whence the name *Material Me* doth spring. Yet this resemblance was not first conceived by deliberate design, but rather came to pass little by little whilst I adorned and refined the countenance of Waybar.
 

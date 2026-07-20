@@ -35,21 +35,21 @@ hl.gesture({
     action    = "workspace",
 })
 
-hl.gesture({
-    fingers   = 3,
-    direction = "up",
-    action    = function()
-        hl.plugin.hymission.open()
-    end
-})
+-- hl.gesture({
+--     fingers   = 3,
+--     direction = "up",
+--     action    = function()
+--         hl.plugin.hymission.open()
+--     end
+-- })
 
-hl.gesture({
-    fingers   = 3,
-    direction = "down",
-    action    = function()
-        hl.plugin.hymission.close()
-    end
-})
+-- hl.gesture({
+--     fingers   = 3,
+--     direction = "down",
+--     action    = function()
+--         hl.plugin.hymission.close()
+--     end
+-- })
 -- Example per-device config
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Devices/ for more
 -- hl.device({

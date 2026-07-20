@@ -42,7 +42,7 @@ for i = 1, 10 do
 end
 
 -- hymissions thingn yaayyyyy
-hl.bind(mainMod .. " + W", hl.plugin.hymission.toggle)
+-- hl.bind(mainMod .. " + W", hl.plugin.hymission.toggle)
 
 -- Special workspace (scratchpad)
 hl.bind(mainMod .. " + S",         hl.dsp.workspace.toggle_special("magic"))

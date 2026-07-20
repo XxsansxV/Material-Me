@@ -23,7 +23,7 @@ The style thereof beareth some likeness unto **Google Material Design**, from wh
 
 Should it please thee to fork this repository, to borrow from it, or to fashion it anew according to thine own liking, thou hast my leave, and I shall raise no objection.
 
-Yet be thou warned that certain paths are written expressly for mine own machine. Most notable amongst these are those found within **Wofi**, and therefore they must be amended to accord with the order of thine own system, lest confusion and mischief ensue.
+Yet be thou warned that certain parameters are written expressly for mine own machine. Most notable amongst these are those found within **.config/hypr/confd/monitors.lua** and **.config/waypaper/config.ini**, and therefore they must be amended to accord with the order of thine own system, lest confusion and mischief ensue.
 
 ## A Final Benediction
 

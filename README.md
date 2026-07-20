@@ -1,6 +1,6 @@
 # Material Me Dotfiles
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0491d1de-b6ad-451b-bb2b-a85ded993c7d" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/43623cca-2c76-40c7-8aeb-ec6fb08d4f8c" />
 
 ## A Foreword
 

@@ -1,6 +1,13 @@
 # Material Me Dotfiles
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/43623cca-2c76-40c7-8aeb-ec6fb08d4f8c" />
+<small><p align="center">Material Me with a blue-ish Frieren wallpaper.</p></small>
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/28f2c42c-023f-4081-8679-36fa3fe89b71" />
+<small><p align="center">Wlogout as seen with a pink accent </p></small>
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2c435284-9550-4a06-8ae9-49f39143b989" />
+<small><p align="center">Material Me with an orange accent color extracted from the Giyu Tomioka wallpaper</p></small>
 
 ## A Foreword
 

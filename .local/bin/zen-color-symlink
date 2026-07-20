@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+PROFILE_DIR=$(find "$HOME/.config/zen" -maxdepth 1 -type d -name "*Default (release)" | head -n1 )
+mkdir -p "$PROFILE_DIR/chrome"
+ln -sf ~/.cache/material-me/zen-colors.css "$PROFILE_DIR/chrome/colors.css"

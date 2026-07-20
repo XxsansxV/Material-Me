@@ -1,19 +1,29 @@
 # Material Me Dotfiles
 
-These are the dotfiles for my **Hyprland Material Me** setup.
+## A Foreword
 
-Though I would scarcely proclaim it to be the most exquisite desktop environment ever devised, I daresay I take no small measure of pride in the manner in which it has ultimately come together. This repository does not encompass every configuration file that resides upon my system; nevertheless, it contains the greater part of what one is likely to encounter during ordinary use, including configurations for **Hyprland**, **Waybar**, and **SwayOSD**.
+Good my lord, or gentle traveller, whosoever hath by fortune or providence arrived upon this humble repository, I bid thee welcome.
 
-Its appearance draws, albeit rather unintentionally, from the principles of **Google's Material Design**—hence the appellation *Material Me*. Such resemblance was never conceived as a deliberate objective, but instead emerged gradually as I found myself refining the appearance of Waybar.
+Herein are gathered the dotfiles appertaining unto mine own **Hyprland Material Me** configuration. Though I make no bold claim that it surpasseth all others in beauty or craft, yet I confess that I hold it in no small esteem, for much labour and many an idle hour have been spent in its fashioning.
 
-## Should You Wish to Make Use of These Dotfiles
+This collection containeth not the whole of my configuration, for certain pieces remain beyond its bounds. Nevertheless, it doth include the greater part of that whereupon the eye most commonly resteth, namely:
 
-Should you find yourself inclined to fork this repository, borrow from it, or employ it in its entirety, pray do so without hesitation. They have been made available for precisely that purpose.
+* **Hyprland**
+* **Waybar**
+* **SwayOSD**
 
-Do bear in mind, however, that certain portions of the configuration contain **hard-coded paths**—Wofi being among the more notable examples. It would therefore be prudent to amend these paths so that they correspond with the particulars of your own system before expecting everything to function as intended.
+The style thereof beareth some likeness unto **Google Material Design**, from whence the name *Material Me* doth spring. Yet this resemblance was not first conceived by deliberate design, but rather came to pass little by little whilst I adorned and refined the countenance of Waybar.
 
-## A Final Word
+## If Thou Wouldst Make Use Thereof
 
-Should these dotfiles prove of any use, or perhaps even serve as a modest source of inspiration, then I shall consider their publication worthwhile.
+Should it please thee to fork this repository, to borrow from it, or to fashion it anew according to thine own liking, thou hast my leave, and I shall raise no objection.
 
-Until our paths should cross again, I bid you farewell, and wish you nothing less than a long, prosperous, and pleasant life.
+Yet be thou warned that certain paths are written expressly for mine own machine. Most notable amongst these are those found within **Wofi**, and therefore they must be amended to accord with the order of thine own system, lest confusion and mischief ensue.
+
+## A Final Benediction
+
+If these humble dotfiles should lighten thy labours, stir thy curiosity, or serve as the foundation of some greater work, then I shall reckon their publication well worthwhile.
+
+Now go thy way in peace. May thy compositor remain steadfast, thy frame-rate unwavering, thy configuration free of error, and thy rice ever worthy of admiration.
+
+Godspeed.

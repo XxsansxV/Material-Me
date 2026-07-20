@@ -1,5 +1,5 @@
 # Material Me Dotfiles
-> Made by DDWMV and merkalev with no love and care put into this at all
+# > Made by DDWMV and merkalev with no love and care put into this at all
 ## A Foreword
 
 Good my lord, or gentle traveller, whosoever hath by fortune or providence arrived upon this humble repository, I bid thee welcome.

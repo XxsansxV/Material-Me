@@ -19,6 +19,44 @@ This collection containeth not the whole of my configuration, for certain pieces
 
 The style thereof beareth some likeness unto **Google Material Design**, from whence the name *Material Me* doth spring. Yet this resemblance was not first conceived by deliberate design, but rather came to pass little by little whilst I adorned and refined the countenance of Waybar.
 
+
+
+## Of Those Things Required
+
+Before these dotfiles may serve thee faithfully, thou must first ensure that certain programs and utilities be present upon thy system. Lacking these, divers portions of the configuration may fail to appear or behave as intended.
+
+Amongst them are:
+
+- **Hyprland**
+- **Hymission for Hyprland** 
+- **Waybar**
+- **SwayOSD**
+- **Mako**
+- **Wofi**
+- **Wlogout**
+- **awww**
+- **Waypaper**
+- **Matugen**
+- **Kitty**
+- **Rofimoji**
+- **Cliphist**
+- **Jetbrains Mono NFP** (For the proper rendering icons)
+- Any further utilities whereupon any of these utilities may depend.
+
+Should any be absent, thy package manager shall readily furnish them, though the manner thereof differeth according to the distribution thou dost employ.
+
+## A Necessary Admonition
+
+Take heed before thou proceedest.
+
+These dotfiles were devised and tested upon a **CachyOS** installation wherein both **Hyprland** and **KDE Plasma** were present. Though Hyprland be the compositor for which this configuration was chiefly fashioned, certain portions thereof do nevertheless lean upon the presence of KDE Plasma.
+
+Most notable amongst these are Waybar modules that make use of **kcm_shell6**, together with sundry commands (such as those executed by **Matugen** after the generation of a new colour scheme) which invoke KDE utilities.
+
+Should thy system lack KDE Plasma, these components must either be altered to employ suitable alternatives or removed altogether. Failing this, thou mayest find that certain features refuse to function, whilst others may occasion errors or break entirely.
+
+In brief: these dotfiles are best enjoyed upon a system where both **Hyprland** and **KDE Plasma** are installed. Those who venture otherwise should be prepared to adapt the configuration to the customs of their own environment.
+
 ## If Thou Wouldst Make Use Thereof
 
 Should it please thee to fork this repository, to borrow from it, or to fashion it anew according to thine own liking, thou hast my leave, and I shall raise no objection.

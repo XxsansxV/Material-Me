@@ -39,7 +39,7 @@ greet_function() {
   greetings+=("Whatever you do at the crossroads, ${YELLOW}keep moving forward.${RESET}")
   greetings+=("${CYAN}Hyprlarp${RESET}")
   greetings+=(":v")
-  greetings+=("That one guy who is ${RED}ACTUALLY${RESET} worse than the 67 kid:")
+  greetings+=("That one guy who is ${RED}ACTUALLY${RESET} worse than the 'Loonix' guy:")
   greetings+=("DO NOT BUY THIS KEYBOARD. WHEN YOU PRESS WASD, IT'S NORMAL. BUT WHEN I PRESS SPACE-")
   greetings+=("[sudo] password for XxcharaxV:")
   greetings+=("Stay ${YELLOW}DETERMINED${RESET}")

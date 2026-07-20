@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -euo pipefail
+wallpaper="$1"
+command -v matugen >/dev/null && matugen image "$wallpaper"
+command -v hyprctl >/dev/null && hyprctl reload
+command -v makoctl >/dev/null && makoctl reload
+if command -v swayosd-server >/dev/null; then
+  pkill -x swayosd-server 2>/dev/null || true
+  swayosd-server >/dev/null 2>&1 &
+fi
+if command -v plasma-apply-colorscheme >/dev/null; then
+  plasma-apply-colorscheme BreezeDark
+  accent_file="${XDG_CONFIG_HOME:-$HOME/.config}/matugen/templateD/Accentcolor-KDE-RGB.conf"
+  if [[ -r "$accent_file" ]]; then
+  plasma-apply-colorscheme --accent-color "#$(cat "$accent_file")"
+  fi
+fi

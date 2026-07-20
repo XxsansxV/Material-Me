@@ -36,7 +36,8 @@ Before these dotfiles may serve thee faithfully, thou must first ensure that cer
 Amongst them are:
 
 - **Hyprland**
-- **Hymission** Hyprland extension
+- **Hypridle**
+- **Hyprlock**
 - **Waybar**
 - **SwayOSD**
 - **Mako**
@@ -46,8 +47,12 @@ Amongst them are:
 - **Waypaper**
 - **Matugen**
 - **Kitty**
+- **Dolphin** (Can be changed in programs.lua)
+- **Zen Browser** (Can be changed in programs.lua but ngl you probably shouldn't)
 - **Rofimoji**
 - **Cliphist**
+- **Flameshot**
+- **Hyprpicker**
 - **KDE Plasma**
 - **Jetbrains Mono NFP** (For the proper rendering icons)
 - **Bibata-Modern-Classic** (Cursor)

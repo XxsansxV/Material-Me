@@ -25,7 +25,7 @@ hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ "fullscreen", toggle}))
 hl.bind(mainMod .. " + SHIFT + C", hl.dsp.exec_cmd("hyprpicker -a"))
 -- hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
-hl.bind("CTRL + ALT + end", hl.dsp.exec_cmd("wlogout"))
+hl.bind("CTRL + ALT + end", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.local/bin/wofi-toggle logout wlogout wlogout"))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + h",  hl.dsp.focus({ direction = "left" }))

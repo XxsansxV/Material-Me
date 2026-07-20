@@ -1,5 +1,7 @@
 # Material Me Dotfiles
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0491d1de-b6ad-451b-bb2b-a85ded993c7d" />
+
 ## A Foreword
 
 Good my lord, or gentle traveller, whosoever hath by fortune or providence arrived upon this humble repository, I bid thee welcome.
@@ -11,6 +13,9 @@ This collection containeth not the whole of my configuration, for certain pieces
 * **Hyprland**
 * **Waybar**
 * **SwayOSD**
+* **Mako**
+* **Wofi**
+* **Wlogout**
 
 The style thereof beareth some likeness unto **Google Material Design**, from whence the name *Material Me* doth spring. Yet this resemblance was not first conceived by deliberate design, but rather came to pass little by little whilst I adorned and refined the countenance of Waybar.
 

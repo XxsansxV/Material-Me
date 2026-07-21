@@ -1,5 +1,5 @@
 # Material Me Dotfiles
-
+> Made by DDWMV with no love.
 ## Premium English
 
 <img width="1920" height="1080" alt="Material Me with a blue Frieren wallpaper" src="https://github.com/user-attachments/assets/43623cca-2c76-40c7-8aeb-ec6fb08d4f8c" />

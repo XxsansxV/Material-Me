@@ -14,8 +14,8 @@
     // "hyprland/workspaces",
     // "hyprland/mode",
     // "hyprland/scratchpad",
-    "custom/media",
     "clock"
+    // "custom/media"
   ],
   "modules-center": [
     "hyprland/workspaces"

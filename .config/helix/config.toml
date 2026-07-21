@@ -1,4 +1,4 @@
-theme = "tokyonight_transparent"
+theme = "tokyonight_moon_transparent"
 
 [editor]
 shell = ["fish", "-c"]

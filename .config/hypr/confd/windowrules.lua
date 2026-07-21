@@ -95,3 +95,9 @@ hl.window_rule({
     match = { class = "kitty" },
     scroll_touchpad = 5,
 })
+
+hl.layer_rule({
+    name = "trytonotdark-waybar",
+    match = { class = "waybar" },
+    ignore_alpha = 0,
+})

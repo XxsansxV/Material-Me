@@ -1,6 +1,6 @@
 # Material Me Dotfiles
 
-## The Joke Version
+## Premium English
 
 Good my lord, gentle traveller, and unfortunate Wayland enthusiast: welcome.
 
@@ -21,7 +21,7 @@ Godspeed.
 
 ---
 
-## The Normal English Version
+## English
 
 Material Me is a personal Hyprland dotfiles collection with a look inspired by Google Material Design. It includes configuration for:
 

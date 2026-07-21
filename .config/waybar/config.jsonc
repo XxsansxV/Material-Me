@@ -14,8 +14,9 @@
     // "hyprland/workspaces",
     // "hyprland/mode",
     // "hyprland/scratchpad",
-    "clock"
+    // "clock",
     // "custom/media"
+    "group/leftside"
   ],
   "modules-center": [
     "hyprland/workspaces"
@@ -45,6 +46,13 @@
     "group/rightside"
   ],
   // Modules configuration
+  "group/leftside": {
+    "orientation": "horizontal",
+    "modules": [
+      "clock",
+      "custom/media"
+    ]
+  },
   "group/rightside": {
     "orientation": "horizontal",
     "modules": [

@@ -181,7 +181,9 @@ button:hover {
 #custom-notification:hover,
 #bluetooth:hover,
 #battery:hover,
-#custom-dnd:hover
+#custom-dnd:hover,
+#custom-media:hover,
+#clock:hover
 
 /* #custom-power:hover, */
   {
@@ -213,7 +215,8 @@ tooltip {
   border: 1px solid @primary;
 }
 
-#rightside {
+#rightside,
+#leftside {
   border: 2px solid @primary;
   border-radius: 999px;
   background-color: @secondary_container;
@@ -223,14 +226,18 @@ tooltip {
 
 #networkbluetooth,
 #audisplay,
-#custom-notification {
+#custom-notification,
+#clock,
+#custom-media {
   border-radius: 999px;
   background-color: @surface_container_highest;
   padding: 0 0px;
   margin: 0 2px;
 }
 
-
+#clock {
+  padding: 0 10px;
+}
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left>widget:first-child>#workspaces {
@@ -242,15 +249,10 @@ tooltip {
   margin-right: 0;
 }
 
-#clock {
-  background-color: @secondary_container;
-  border: 2px solid @primary;
-  padding: 0 10px;
-}
-
 #battery,
 #custom-notification,
-#custom-dnd {
+#custom-dnd,
+#custom-media {
   padding: 0 10px;
   margin: 0 2px;
   background-color: @surface_container_highest;
@@ -317,20 +319,6 @@ label:focus {
 
 #wireplumber.muted {
   background-color: #f53c3c;
-}
-
-#custom-media {
-  background-color: #66cc99;
-  color: #2a5c45;
-  min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-  background-color: #66cc99;
-}
-
-#custom-media.custom-vlc {
-  background-color: #ffa000;
 }
 
 #custom-power {

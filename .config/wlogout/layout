@@ -6,7 +6,7 @@
 }
 {
     "label" : "saysmt",
-    "action" : "bash ~/.config/fish/GreetMeInBash.sh notify",
+    "action" : "GreetmeBash notify",
     "text" : "say so[M]ething",
     "keybind" : "m"
 }

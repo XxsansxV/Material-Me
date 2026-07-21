@@ -8,7 +8,7 @@ alias dotgit='git --git-dir=$HOME/.dotfiles-backup --work-tree=$HOME'
 alias pls='sudo'
 alias bigfetch="fastfetch -c all.jsonc"
 alias tinyfetch="fastfetch -c small.jsonc"
-alias GreetmeBash="bash $XDG_CONFIG_HOME/fish/GreetMeInBash.sh"
+# alias GreetmeBash="bash $XDG_CONFIG_HOME/fish/GreetMeInBash.sh"
 
 # overwrite greeting
 # potentially disabling fastfetch

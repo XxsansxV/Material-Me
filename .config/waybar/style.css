@@ -11,6 +11,7 @@
 window#waybar {
   margin: 10px 10px 0px 10px;
   background: transparent;
+  box-shadow: none;
   /* background-color: rgba(0, 0, 0, 0.5); */
   /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
   color: #ffffff;

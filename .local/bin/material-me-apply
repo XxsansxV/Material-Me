@@ -27,3 +27,14 @@ if command -v plasma-apply-colorscheme >/dev/null; then
     fi
   fi
 fi
+if command -v flameshot >/dev/null; then
+  accent_file="${XDG_CONFIG_HOME:-$HOME/.config}/matugen/templateD/Accentcolor-KDE-RGB.conf"
+  if [[ -r "$accent_file" ]]; then
+    accent=$(tr -d '[:space:]' < "$accent_file")
+    if [[ "$accent" =~ ^[[:xdigit:]]{6}$ ]]; then
+      flameshot config --maincolor "#$accent"
+    else
+      printf 'Ignoring invalid accent color in %s\n' "$accent_file" >&2
+    fi
+  fi
+fi

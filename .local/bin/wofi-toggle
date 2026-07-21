@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -euo pipefail
 # Generic toggle-launcher wrapper.
 #
 # Usage: wofi-toggle <tag> <process_name> <command...>
@@ -11,14 +12,21 @@
 #   same tag open again     -> close it
 #   different tag open      -> close the old one, launch the new one
 
+if [[ $# -lt 3 ]]; then
+  printf 'Usage: %s <tag> <process_name> <command...>\n' "${0##*/}" >&2
+  exit 2
+fi
+
 tag="$1"; shift
 proc="$1"; shift
 cmd="$*"
 
-state_file="${XDG_RUNTIME_DIR:-/tmp}/wofi-toggle.state"
+runtime_dir="${XDG_RUNTIME_DIR:-/tmp}"
+state_file="$runtime_dir/wofi-toggle-${UID}.state"
+umask 077
 
 if [[ -f "$state_file" ]]; then
-  read -r old_tag old_proc < "$state_file"
+  read -r old_tag old_proc < "$state_file" || true
 
   if [[ -n "$old_proc" ]] && pgrep -x "$old_proc" > /dev/null; then
     pkill -x "$old_proc"
@@ -33,5 +41,5 @@ if [[ -f "$state_file" ]]; then
   fi
 fi
 
-echo "$tag $proc" > "$state_file"
+printf '%s %s\n' "$tag" "$proc" > "$state_file"
 exec bash -c "$cmd"

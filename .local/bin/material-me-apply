@@ -1,10 +1,16 @@
 #!/usr/bin/env bash
 set -euo pipefail
+
+if [[ $# -ne 1 || ! -r "$1" ]]; then
+  printf 'Usage: %s /path/to/wallpaper\n' "${0##*/}" >&2
+  exit 2
+fi
+
 wallpaper="$1"
-command -v matugen >/dev/null && matugen image "$wallpaper"
-command -v hyprctl >/dev/null && hyprctl reload
-command -v makoctl >/dev/null && makoctl reload
-command -v zen-color-symlink >/dev/null && zen-color-symlink
+command -v matugen >/dev/null 2>&1 && matugen image "$wallpaper"
+command -v hyprctl >/dev/null 2>&1 && hyprctl reload
+command -v makoctl >/dev/null 2>&1 && makoctl reload
+command -v zen-color-symlink >/dev/null 2>&1 && zen-color-symlink
 if command -v swayosd-server >/dev/null; then
   pkill -x swayosd-server 2>/dev/null || true
   swayosd-server >/dev/null 2>&1 &
@@ -13,6 +19,11 @@ if command -v plasma-apply-colorscheme >/dev/null; then
   plasma-apply-colorscheme BreezeDark
   accent_file="${XDG_CONFIG_HOME:-$HOME/.config}/matugen/templateD/Accentcolor-KDE-RGB.conf"
   if [[ -r "$accent_file" ]]; then
-  plasma-apply-colorscheme --accent-color "#$(cat "$accent_file")"
+    accent=$(tr -d '[:space:]' < "$accent_file")
+    if [[ "$accent" =~ ^[[:xdigit:]]{6}$ ]]; then
+      plasma-apply-colorscheme --accent-color "#$accent"
+    else
+      printf 'Ignoring invalid accent color in %s\n' "$accent_file" >&2
+    fi
   fi
 fi

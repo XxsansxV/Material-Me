@@ -38,10 +38,6 @@ output_path = "~/.config/kitty/colors.conf"
 input_path = "~/.config/matugen/templates/rgb-definecolors-conf.template"
 output_path = "~/.config/hypr/hyprlockcolors.conf"
 
-[templates.swaync]
-input_path = "~/.config/matugen/templates/rgba-definecolors-css.template"
-output_path = "~/.config/swaync/colors.css"
-
 [templates.zen]
 input_path  = "~/.config/matugen/templates/rgb-rootcolors.css.template"
 output_path = "~/.cache/material-me/zen-colors.css"

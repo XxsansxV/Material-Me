@@ -1,4 +1,19 @@
 #!/usr/bin/env bash
-PROFILE_DIR=$(find "$HOME/.config/zen" -maxdepth 1 -type d -name "*Default (release)" | head -n1 )
-mkdir -p "$PROFILE_DIR/chrome"
-ln -sf ~/.cache/material-me/zen-colors.css "$PROFILE_DIR/chrome/colors.css"
+set -euo pipefail
+
+zen_dir="${XDG_CONFIG_HOME:-$HOME/.config}/zen"
+color_file="${XDG_CACHE_HOME:-$HOME/.cache}/material-me/zen-colors.css"
+profile_dir=$(find "$zen_dir" -maxdepth 1 -type d -name '*Default (release)' -print -quit 2>/dev/null || true)
+
+if [[ -z "$profile_dir" ]]; then
+  printf 'No Zen Default (release) profile found under %s\n' "$zen_dir" >&2
+  exit 1
+fi
+
+if [[ ! -r "$color_file" ]]; then
+  printf 'Generated color file not found: %s\n' "$color_file" >&2
+  exit 1
+fi
+
+mkdir -p "$profile_dir/chrome"
+ln -sfn "$color_file" "$profile_dir/chrome/colors.css"

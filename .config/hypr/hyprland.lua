@@ -1,5 +1,5 @@
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
--- Modular Hyprland config — see ~/.config/hypr/conf.d/   --
+-- Modular Hyprland config — see ~/.config/hypr/confd/     --
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
 -- Remove this line once you're happy with the setup and don't want

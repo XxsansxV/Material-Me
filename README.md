@@ -15,9 +15,7 @@
 
 Good my lord, or gentle traveller, whosoever hath by fortune or providence arrived upon this humble repository, I bid thee welcome.
 
-Herein are gathered the dotfiles appertaining unto mine own **Hyprland Material Me** configuration. Though I make no bold claim that it surpasseth all others in beauty or craft, yet I confess that I hold it in no small esteem, for much labour and many an idle hour have been spent in its fashioning.
-
-This collection containeth not the whole of my configuration, for certain pieces remain beyond its bounds. Nevertheless, it doth include the greater part of that whereupon the eye most commonly resteth, namely:
+Herein are gathered the dotfiles appertaining unto mine own Hyprland Material Me configuration, whose appearance draweth no small inspiration from Google Material Design. Wallpapers are entrusted unto Waypaper, whilst Matugen doth derive a fresh palette of colours from the chosen image and bestow the same throughout the desktop. This collection containeth not the whole of my configuration, for certain pieces remain beyond its bounds. Nevertheless, it doth include the greater part of that whereupon the eye most commonly resteth, namely:
 
 - **Hyprland**
 - **Waybar**
@@ -89,7 +87,7 @@ Godspeed.
 
 ## English
 
-Material Me is a personal Hyprland dotfiles collection with a look inspired by Google Material Design. It includes configuration for:
+Material Me is a personal Hyprland dotfiles collection with a look inspired by Google Material Design. Wallpapers are managed through Waypaper, while Matugen automatically derives a colour palette from the selected wallpaper and applies it throughout the desktop. It includes configuration for:
 
 - Hyprland, Hypridle, and Hyprlock
 - Waybar and SwayOSD

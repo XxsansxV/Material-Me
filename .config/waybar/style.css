@@ -64,6 +64,7 @@ button:hover {
   background-color: @secondary_container;
   border: 2px solid @primary;
   padding: 4px;
+  border-radius: 100px;
   /* gaps: 4px; */
 }
 
@@ -77,8 +78,8 @@ button:hover {
 #workspaces button {
   margin: 0 2px;
   min-width: 10px;
-  min-height: 1px;
-  padding: 0 4px;
+  min-height: 8px;
+  padding: 0px 4px;
   background-color: transparent;
   color: #ffffff;
   border-radius: 100px;

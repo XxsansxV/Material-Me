@@ -9,7 +9,8 @@
 <img width="1920" height="1080" alt="Material Me with an orange accent" src="https://github.com/user-attachments/assets/2c435284-9550-4a06-8ae9-49f39143b989" />
 <p align="center"><small>Material Me with an accent extracted from a Giyu Tomioka wallpaper.</small></p>
 
-## Premium English
+<details>
+<summary><strong>## Premium English</strong></summary>
 
 ### A Foreword
 
@@ -84,8 +85,10 @@ Now go thy way in peace. May thy compositor remain steadfast, thy frame rate unw
 Godspeed.
 
 ---
+</details>
 
-## English
+<details>
+<summary><strong>## Commoner's English</strong><summary>
 
 Material Me is a personal Hyprland dotfiles collection with a look inspired by Google Material Design. Wallpapers are managed through Waypaper, while Matugen automatically derives a colour palette from the selected wallpaper and applies it throughout the desktop. It includes configuration for:
 
@@ -176,3 +179,5 @@ The configuration is designed for a system where KDE Plasma is installed alongsi
 ### License
 
 Released under the [MIT License](LICENSE). You may use, modify, and redistribute these files under its terms. Attribution is appreciated.
+
+</details>

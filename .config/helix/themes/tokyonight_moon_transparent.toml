@@ -1,4 +1,4 @@
 inherits = "tokyonight_moon"
 
-"ui.background" = { bg = "none" }
+"ui.background" = { bg = "transparent" }
 "comment" = { fg = "#aaaadf" }

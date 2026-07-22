@@ -307,12 +307,12 @@
     "on-click": "kcmshell6 kcm_pulseaudio"
   },
   "custom/media": {
-    "format": "{icon} {text}",
+    "format": "{icon}{text}",
     "return-type": "json",
     "max-length": 40,
     "format-icons": {
       "spotify": "",
-      "default": "🎜"
+      "default": "󰝚"
     },
     "on-click": "playerctl play-pause",
     "on-click-right": "open the running mediaplayer i guess hello???",

@@ -314,6 +314,8 @@
       "spotify": "",
       "default": "🎜"
     },
+    "on-click": "playerctl play-pause",
+    "on-click-right": "open the running mediaplayer i guess hello???",
     "escape": true,
     "exec": "bash $HOME/.config/waybar/mediaplayer.sh"
   },
@@ -329,7 +331,7 @@
     "format": "",
     "tooltip": false,
     // "menu": "on-click",
-    "on-click": "wlogout",
+    "on-click": "wlogout"
     // "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
     // "menu-actions": {
     // 	"shutdown": "shutdown",

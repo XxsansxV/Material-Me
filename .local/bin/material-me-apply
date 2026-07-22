@@ -28,13 +28,22 @@ if command -v plasma-apply-colorscheme >/dev/null; then
   fi
 fi
 if command -v flameshot >/dev/null; then
-  accent_file="${XDG_CONFIG_HOME:-$HOME/.config}/matugen/templateD/Accentcolor-KDE-RGB.conf"
-  if [[ -r "$accent_file" ]]; then
-    accent=$(tr -d '[:space:]' < "$accent_file")
+  contrastcolor_file="${XDG_CONFIG_HOME:-$HOME/.config}/matugen/templateD/Accentcolor-KDE-RGB.conf"
+  accentcolor_file="${XDG_CONFIG_HOME:-$HOME/.config}/matugen/templateD/flameshot-accent-color"
+  if [[ -r "$contrastcolor_file" ]]; then
+    contrast=$(tr -d '[:space:]' < "$contrastcolor_file")
+    if [[ "$contrast" =~ ^[[:xdigit:]]{6}$ ]]; then
+      flameshot config --contrastcolor "#$contrast"
+    else
+      printf 'Ignoring invalid contrast color in %s\n' "$contrastcolor_file" >&2
+    fi
+  fi
+  if [[ -r "$accentcolor_file" ]]; then
+    accent=$(tr -d '[:space:]' < "$accentcolor_file")
     if [[ "$accent" =~ ^[[:xdigit:]]{6}$ ]]; then
       flameshot config --maincolor "#$accent"
     else
-      printf 'Ignoring invalid accent color in %s\n' "$accent_file" >&2
+      printf 'audbnsudoasda' >&2
     fi
   fi
 fi

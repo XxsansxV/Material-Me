@@ -10,7 +10,7 @@
 <p align="center"><small>Material Me with an accent extracted from a Giyu Tomioka wallpaper.</small></p>
 
 > [!WARNING]
-> This is WIP and will always be.  
+> This is WIP and will always be... unless you convince me to leave this repo alone. 
 
 This README.md exists in two dialects of English.  
 Choose whichever best suiteth thee.

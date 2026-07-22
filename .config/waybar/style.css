@@ -232,7 +232,7 @@ tooltip {
 #custom-media {
   border-radius: 999px;
   background-color: @surface_container_highest;
-  padding: 0 0px;
+  padding: 0 0;
   margin: 0 2px;
 }
 

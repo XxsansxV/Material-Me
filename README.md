@@ -9,7 +9,10 @@
 <img width="1920" height="1080" alt="Material Me with an orange accent" src="https://github.com/user-attachments/assets/2c435284-9550-4a06-8ae9-49f39143b989" />
 <p align="center"><small>Material Me with an accent extracted from a Giyu Tomioka wallpaper.</small></p>
 
-This README.md exists in two dialects of English.
+> [!WARNING]
+> This is WIP and will always be.  
+
+This README.md exists in two dialects of English.  
 Choose whichever best suiteth thee.
 
 <details>

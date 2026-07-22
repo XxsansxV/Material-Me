@@ -88,7 +88,7 @@ Godspeed.
 </details>
 
 <details>
-<summary><strong>Commoner's English</strong><summary>
+<summary><strong>Commoner's English</strong></summary>
 
 Material Me is a personal Hyprland dotfiles collection with a look inspired by Google Material Design. Wallpapers are managed through Waypaper, while Matugen automatically derives a colour palette from the selected wallpaper and applies it throughout the desktop. It includes configuration for:
 

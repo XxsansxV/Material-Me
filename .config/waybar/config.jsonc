@@ -316,6 +316,8 @@
     },
     "on-click": "playerctl play-pause",
     "on-click-right": "open the running mediaplayer i guess hello???",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous",
     "escape": true,
     "exec": "bash $HOME/.config/waybar/mediaplayer.sh"
   },

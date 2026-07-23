@@ -1,7 +1,7 @@
 # Material Me Dotfiles  
 Hyprland dotfiles with adaptive colors, as well as minimalistic customization shenanigan idk man
 
-### Showcase!
+## Showcase!
 <img width="1920" height="1080" alt="Material Me with a blue Frieren wallpaper" src="https://github.com/user-attachments/assets/43623cca-2c76-40c7-8aeb-ec6fb08d4f8c" />
 <p align="center"><small>Material Me with a blue-ish Frieren wallpaper.</small></p>
 

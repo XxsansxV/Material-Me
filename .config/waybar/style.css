@@ -1,7 +1,6 @@
 @import url("./colors.css");
 
 * {
-  /* `otf-font-awesome` is required to be installed for icons */
   font-family: JetBrainsMono NFP, JetBrainsMonoNL Nerd Font Mono, JetBrainsMono Nerd Font, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
   color: @on_surface;
   font-size: 12px;
@@ -12,67 +11,27 @@ window#waybar {
   margin: 10px 10px 0px 10px;
   background: transparent;
   box-shadow: none;
-  /* background-color: rgba(0, 0, 0, 0.5); */
-  /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
   color: #ffffff;
-  /* transition-property: background-color; */
-  /* transition-duration: .5s; */
-}
-
-window#waybar.hidden {
-  opacity: 0.2;
-}
-
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
-
-window#waybar.termite {
-  background-color: #3F3F3F;
-}
-
-window#waybar.chromium {
-  background-color: #000000;
-  border: none;
 }
 
 button {
-  /* Use box-shadow instead of border so the text isn't offset */
-  /* box-shadow: inset 0 -3px transparent; */
-  /* Avoid rounded borders under each button name */
   border: none;
   border-radius: 999px;
 }
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
   background: inherit;
-  /* box-shadow: inset 0 -3px #ffffff; */
 }
-
-/* you can set a style on hover for any module like this */
-/* #pulseaudio:hover { */
-/* background-color: #a37800; */
-/* } */
 
 #workspaces {
   background-color: @secondary_container;
   border: 2px solid @primary;
   padding: 4px;
   border-radius: 100px;
-  /* gaps: 4px; */
 }
 
 #workspaces button label {
   font-size: 8px;
-  /* color: @tertiary; */
-  /* transition: font-size 150ms ease-in-out, */
-  /* color 150ms ease-in-out; */
 }
 
 #workspaces button {
@@ -84,14 +43,9 @@ button:hover {
   color: #ffffff;
   border-radius: 100px;
   background-color: @surface_container_high;
-  /* transform: scale(0.5); */
   transition: background-color 150ms ease-in-out,
     min-width 150ms ease-in-out;
 }
-
-/* #workspaces button:hover { */
-/* background: @surface_container_highest; */
-/* } */
 
 #workspaces button.focused,
 #workspaces button.active {
@@ -113,8 +67,6 @@ button:hover {
   color: @on_surface;
 }
 
-/* #worspaces button.focused, #workspaces button */
-
 #workspaces button.empty {
   min-width: 30px;
   min-height: 5px;
@@ -124,7 +76,7 @@ button:hover {
 
 @keyframes blinkopacity {
   to {
-    background-color: @tertiary_container;
+    background-color: @tertiary;
     background-color: @surface_container_lowest;
   }
 }
@@ -184,26 +136,11 @@ button:hover {
 #battery:hover,
 #custom-dnd:hover,
 #custom-media:hover,
-#clock:hover
-
-/* #custom-power:hover, */
-  {
+#clock:hover {
   background-color: @secondary;
   color: @surface_container;
   transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
 }
-
-/* #pulseaudio:active, */
-/* #backlight:active, */
-/* #network:active, */
-/* #bluetooth:active, */
-/* #battery:active */
-/* #custom-power:hover, */
-/* { */
-/* background-color: @secondary_container; */
-/* color: @surface_container; */
-/* transition: background-color 150ms ease-in-out, color 150ms ease-in-out; */
-/* } */
 
 #window {
   margin: 0 4px;

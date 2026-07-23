@@ -27,15 +27,15 @@ this is hyde btw, i just yanked.
       "type": "custom",
       "format": "┌──────────────────────────────────────────┐"
     },
-    {
-      "type": "chassis",
-      "key": "  󰇺 Chassis",
-      "format": "{1} {2} {3}"
-    },
+    // {
+    //   "type": "chassis",
+    //   "key": "  󰇺 Chassis",
+    //   "format": "{4} {5}"
+    // },
     {
       "type": "os",
       "key": "  󰣇 OS",
-      "format": "{2}",
+      "format": "{3}",
       "keyColor": "red"
     },
     {
@@ -58,6 +58,7 @@ this is hyde btw, i just yanked.
     {
       "type": "terminal",
       "key": "   Terminal",
+      "format": "{5}",
       "keyColor": "yellow"
     },
     {
@@ -74,7 +75,7 @@ this is hyde btw, i just yanked.
     {
       "type": "title",
       "key": "  ",
-      "format": "{6} {7} {8}"
+      "format": "{6} {7} {8} :)"
     },
     {
       "type": "custom",
@@ -88,7 +89,7 @@ this is hyde btw, i just yanked.
     },
     {
       "type": "gpu",
-      "format": "{1} {2}",
+      "format": "{2}",
       "key": "  󰊴 GPU",
       "keyColor": "blue"
     },
@@ -100,7 +101,7 @@ this is hyde btw, i just yanked.
     },
     {
       "type": "memory",
-      "key": "   Memory ",
+      "key": "   Memory ",
       "keyColor": "magenta"
     },
     {

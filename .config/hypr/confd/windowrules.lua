@@ -71,13 +71,6 @@ hl.window_rule({
     float = true,
 })
 
-hl.layer_rule({
-    name = "Wlogout-Blur",
-    match = { class = "logout_dialog" },
-    ignore_alpha = 0,
-    blur = true,
-})
-
 hl.window_rule({
     name = "MPV-Float",
     match = { class = "mpv" },
@@ -96,8 +89,23 @@ hl.window_rule({
     scroll_touchpad = 5,
 })
 
+hl.window_rule({
+    name = "kalkulatorplsfly",
+    match = { class = "org.kde.kalk" },
+    float = true,
+})
+
+-- From here on, prob layer rules.
+
 hl.layer_rule({
     name = "trytonotdark-waybar",
     match = { class = "waybar" },
     ignore_alpha = 0,
+})
+
+hl.layer_rule({
+    name = "Wlogout-Blur",
+    match = { class = "logout_dialog" },
+    ignore_alpha = 0,
+    blur = true,
 })

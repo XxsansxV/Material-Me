@@ -200,6 +200,7 @@
     // "timezone": "America/New_York",
     "format": "{:%H:%M | %d-%m-%Y}",
     "tooltip-format": "<tt>{calendar}</tt>",
+    "on-click": "merkuro-calendar",
     "calendar": {
       "format": {
         "months": "<big>{}</big>",

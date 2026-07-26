@@ -3,6 +3,8 @@ if test -r /usr/share/cachyos-fish-config/cachyos-config.fish
 end
 
 set -q XDG_CONFIG_HOME; or set XDG_CONFIG_HOME "$HOME/.config"
+set -gx EDITOR helix
+set -gx VISUAL helix
 
 alias dotgit='git --git-dir=$HOME/.dotfiles-backup --work-tree=$HOME'
 alias pls='sudo'

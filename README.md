@@ -145,6 +145,7 @@ Applications and utilities referenced by the configuration:
 - Hyprpicker
 - Playerctl
 - jq
+- poweralertd
 - PipeWire tools (`wpctl`)
 - Fcitx5
 - JetBrains Mono Nerd Font

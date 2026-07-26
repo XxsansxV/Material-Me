@@ -334,7 +334,7 @@
     "format": "",
     "tooltip": false,
     // "menu": "on-click",
-    "on-click": "wlogout"
+    "on-click": "$HOME/.local/bin/wofi-toggle logout wlogout wlogout"
     // "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
     // "menu-actions": {
     // 	"shutdown": "shutdown",

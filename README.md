@@ -14,6 +14,9 @@ Hyprland dotfiles with adaptive colors, as well as minimalistic customization sh
 > [!WARNING]
 > This is WIP and will always be... unless you convince me to leave this repo alone. 
 
+> [!NOTE]
+> Those screenshots are outdated. The latest appearance of these dotfiles as of writing this block has no blur, and has a custom fastfetch.
+
 This README.md exists in two dialects of English.  
 Choose whichever best suiteth thee.
 

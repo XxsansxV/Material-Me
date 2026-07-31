@@ -29,5 +29,3 @@ alias hx='helix'
 function fish_greeting
     GreetmeBash greet
 end
-
-thefuck --alias | source

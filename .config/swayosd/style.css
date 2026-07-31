@@ -11,7 +11,8 @@ label {
   color: @on_surface;
 }
 
-progress {
+progress,
+segment.active {
   min-height: 10px;
   background: @on_surface;
   border: none;
@@ -20,7 +21,8 @@ progress {
   box-shadow: none;
 }
 
-trough {
+trough,
+segment {
   min-height: 10px;
   background: @surface_container_highest;
   border: none;

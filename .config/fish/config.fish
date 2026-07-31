@@ -30,4 +30,4 @@ function fish_greeting
     GreetmeBash greet
 end
 
-# thefuck --alias | source
+thefuck --alias | source

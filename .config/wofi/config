@@ -9,3 +9,4 @@ dynamic_lines=true
 dynamic_shrink=true
 matching=contains
 term=kitty
+always_parse_args=true

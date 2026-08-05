@@ -79,8 +79,8 @@ hl.animation({ leaf = "fadeIn",        enabled = true,  speed = 1.73, bezier = "
 hl.animation({ leaf = "fadeOut",       enabled = true,  speed = 1.46, bezier = "almostLinear" })
 hl.animation({ leaf = "fade",          enabled = true,  speed = 3.03, bezier = "quick" })
 hl.animation({ leaf = "layers",        enabled = true,  speed = 3.81, bezier = "easeOutQuint" })
-hl.animation({ leaf = "layersIn",      enabled = true,  speed = 2.7,    bezier = "easeOutQuint", style = "popin 93%" })
-hl.animation({ leaf = "layersOut",     enabled = true,  speed = 2.4,  bezier = "linear",       style = "popin 93%" })
+hl.animation({ leaf = "layersIn",      enabled = true,  speed = 2.7,    bezier = "easeOutQuint", style = "popin 80%" })
+hl.animation({ leaf = "layersOut",     enabled = true,  speed = 2.4,  bezier = "linear",       style = "popin 80%" })
 hl.animation({ leaf = "fadeLayersIn",  enabled = true,  speed = 1.79, bezier = "almostLinear" })
 hl.animation({ leaf = "fadeLayersOut", enabled = true,  speed = 1.39, bezier = "almostLinear" })
 hl.animation({ leaf = "workspaces",    enabled = true,  speed = 3, bezier = "easeOutQuint", style = "slidefade" })
@@ -98,7 +98,7 @@ hl.config({ scrolling = { fullscreen_on_one_column = true } })
 hl.config({
     misc = {
         force_default_wallpaper = -1,
-        disable_hyprland_logo   = false,
+        disable_hyprland_logo   = true,
         -- vrr = 1,
     },
 })

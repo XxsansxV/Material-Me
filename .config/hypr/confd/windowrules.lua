@@ -102,10 +102,3 @@ hl.layer_rule({
     match = { class = "waybar" },
     ignore_alpha = 0,
 })
-
-hl.layer_rule({
-    name = "Wlogout-Blur",
-    match = { class = "logout_dialog" },
-    ignore_alpha = 0,
-    blur = true,
-})

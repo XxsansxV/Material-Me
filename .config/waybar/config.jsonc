@@ -59,10 +59,17 @@
       "group/audisplay",
       "group/networkbluetooth",
       // "custom/notification",
-      "custom/dnd",
+      "group/dndim",
       "battery",
       "tray",
       "custom/power"
+    ]
+  },
+  "group/dndim": {
+    "orientation": "horizontal",
+    "modules": [
+      "custom/dnd",
+      "custom/swaydim"
     ]
   },
   "group/audisplay": {
@@ -342,5 +349,14 @@
     // 	"suspend": "systemctl suspend",
     // 	"hibernate": "systemctl hibernate"
     // }
+  },
+  "custom/swaydim": {
+    "return-type": "json",
+    "exec": "swaydim status",
+    "interval": "once",
+    "signal": 8,
+    "format": "{}",
+    "on-click": "swaydim toggle",
+    "tooltip": true
   }
 }

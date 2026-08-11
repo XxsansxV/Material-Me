@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+STATE="$HOME/.cache/swaydim_brightness"
+PREV="$HOME/.cache/swaydim_prev"
+STEP=0.05
+WAYBAR_SIGNAL=8
+
+get() { busctl --user get-property rs.wl-gammarelay / rs.wl.gammarelay Brightness | awk '{print $2}'; }
+set_b() {
+  busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Brightness d "$1"
+  echo "$1" > "$STATE"
+}
+
+emit_status() {
+  cur=$(get)
+  pct=$(awk -v c="$cur" 'BEGIN{printf "%d", c*100}')
+  # nf-fa-moon-o U+F186 (dimmed) / nf-fa-sun-o U+F185 (normal), as raw UTF-8 bytes
+  icon_dim=$'\xef\x86\x86'
+  icon_normal=$'\xef\x86\x85'
+  if awk -v c="$cur" 'BEGIN{exit !(c<0.999)}'; then
+    class="dimmed"
+    tip="Software dim: ${pct}% (below hardware floor)\nClick to restore"
+    printf '{"text":"%s","class":"%s","tooltip":"%s"}\n' "$icon_dim" "$class" "$tip"
+  else
+    class="normal"
+    tip="Software dim: off\nClick to dim"
+    printf '{"text":"%s","class":"%s","tooltip":"%s"}\n' "$icon_normal" "$class" "$tip"
+  fi
+}
+
+case "${1:-}" in
+  down)
+    cur=$(get)
+    new=$(awk -v c="$cur" -v s="$STEP" 'BEGIN{v=c-s; print (v<0.1)?0.1:v}')
+    set_b "$new"
+    pkill -RTMIN+"$WAYBAR_SIGNAL" waybar 2>/dev/null || true
+    ;;
+  up)
+    cur=$(get)
+    new=$(awk -v c="$cur" -v s="$STEP" 'BEGIN{v=c+s; print (v>1)?1:v}')
+    set_b "$new"
+    pkill -RTMIN+"$WAYBAR_SIGNAL" waybar 2>/dev/null || true
+    ;;
+  toggle)
+    cur=$(get)
+    if awk -v c="$cur" 'BEGIN{exit !(c<0.999)}'; then
+      echo "$cur" > "$PREV"
+      set_b 1.0
+    else
+      saved=$(cat "$PREV" 2>/dev/null || echo 0.4)
+      set_b "$saved"
+    fi
+    pkill -RTMIN+"$WAYBAR_SIGNAL" waybar 2>/dev/null || true
+    ;;
+  status)
+    emit_status
+    ;;
+esac

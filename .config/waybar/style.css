@@ -123,6 +123,7 @@ button:hover {
 #custom-notification,
 #custom-power,
 #custom-dnd,
+#custom-swaydim,
 #mpd {
   padding: 0 10px;
   color: @on_surface;
@@ -164,6 +165,7 @@ tooltip {
 
 #networkbluetooth,
 #audisplay,
+#dndim,
 #custom-notification,
 #clock,
 #custom-media {
@@ -194,6 +196,10 @@ tooltip {
   padding: 0 10px;
   margin: 0 2px;
   background-color: @surface_container_highest;
+}
+
+#custom-dnd {
+  margin: 0px;
 }
 
 @keyframes blink {
@@ -257,6 +263,22 @@ label:focus {
 
 #wireplumber.muted {
   background-color: #f53c3c;
+}
+
+#custom-swaydim {
+  padding: 0 10px;
+  color: @on_surface;
+  transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
+}
+
+#custom-swaydim:hover {
+  background-color: @secondary;
+  color: @surface_container;
+}
+
+#custom-swaydim.dimmed {
+  background-color: @tertiary;
+  color: @surface_container;
 }
 
 #custom-power {

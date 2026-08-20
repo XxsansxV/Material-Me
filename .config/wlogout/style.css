@@ -26,6 +26,7 @@ button {
 }
 
 button:active,
+button:focus,
 button:hover {
   background-size: 60%;
   background-color: @secondary_container;

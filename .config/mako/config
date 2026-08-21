@@ -15,3 +15,5 @@ max-icon-size=48
 on-button-left=invoke-default-action
 on-button-right=dismiss
 max-history=100
+[mode=do-not-disturb]
+invisible=1

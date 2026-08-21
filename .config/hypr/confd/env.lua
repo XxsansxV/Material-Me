@@ -16,3 +16,5 @@ hl.env("ELECTRON_OZONE_PLATFORM_HINT", "auto")
 hl.env("XDG_MENU_PREFIX", "arch-")
 
 hl.env("PATH", os.getenv("HOME") .. "/.local/bin:" .. (os.getenv("PATH") or ""))
+
+hl.env("XMODIFIERS","@im=fcitx")

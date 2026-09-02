@@ -79,7 +79,7 @@ hl.bind("XF86AudioLowerVolume",  hl.dsp.exec_cmd("swayosd-client --output-volume
 hl.bind("XF86AudioMute",         hl.dsp.exec_cmd("swayosd-client --output-volume mute-toggle"), { locked = true, repeating = false })
 hl.bind("XF86MonBrightnessUp",   hl.dsp.exec_cmd("swayosd-client --brightness raise"),   { locked = true, repeating = true })
 hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("swayosd-client --brightness lower"),   { locked = true, repeating = true })
-hl.bind("XF86AudioMicMute", hl.dsp.exec_cmd([[sh -c "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle && swayosd-client --input-volume mute-toggle"]]), { locked = true, repeating = false })
+hl.bind("XF86AudioMicMute", hl.dsp.exec_cmd([[sh -c "swayosd-client --input-volume mute-toggle"]]), { locked = true, repeating = false })
 
 -- software dimming - swaydim wrapper script invoker
 hl.bind("SHIFT + XF86MonBrightnessDown", hl.dsp.exec_cmd("swaydim down"), { locked = true, repeating = true })

@@ -1,0 +1,14 @@
+* {
+    primary: #ffb599;
+    secondary: #e7beaf;
+    tertiary: #d4c78e;
+    primary-container: #71361d;
+    secondary-container: #5d4035;
+    tertiary-container: #50471a;
+    on-surface: #f1dfd9;
+    surface: #1a110e;
+    surface-container: #271e1a;
+    surface-container-high: #322824;
+    surface-container-highest: #3d322f;
+    outline: #a08d86;
+}

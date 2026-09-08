@@ -15,11 +15,11 @@ hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(programs.terminal))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(programs.fileManager))
 
 -- Wofi-related
-hl.bind("ALT + space", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.local/bin/wofi-toggle drun wofi 'wofi --show drun'"))
-hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.local/bin/wofi-toggle run wofi 'wofi --show run --term=" .. programs.terminal .. "'"))
-hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.local/bin/wofi-toggle makohistory wofi 'bash " .. os.getenv("HOME") .. "/.config/mako/MakoWofiCrossover.sh'"))
-hl.bind(mainMod .. " + SHIFT + V", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.local/bin/wofi-toggle clip wofi 'cliphist list | wofi --dmenu | cliphist decode | wl-copy'"))
-hl.bind(mainMod .. " + period", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.local/bin/wofi-toggle emoji wofi '".. programs.emojipicker .. "'"))
+hl.bind("ALT + space", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.local/bin/wofi-toggle drun rofi 'rofi -show drun'"))
+hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.local/bin/wofi-toggle run rofi 'rofi -show run --term=" .. programs.terminal .. "'"))
+hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.local/bin/wofi-toggle makohistory rofi 'bash " .. os.getenv("HOME") .. "/.config/mako/MakoWofiCrossover.sh'"))
+hl.bind(mainMod .. " + SHIFT + V", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.local/bin/wofi-toggle clip rofi 'cliphist list | rofi -dmenu -p Clipboard | cliphist decode | wl-copy'"))
+hl.bind(mainMod .. " + period", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.local/bin/wofi-toggle emoji rofi '".. programs.emojipicker .. "'"))
 
 -- Others
 hl.bind(mainMod .. " + CTRL + L", hl.dsp.exec_cmd("hyprlock"))

@@ -1,0 +1,223 @@
+@import "~/.config/rofi/themes/colors.rasi"
+
+/*
+ * MatMe — Waybar-inspired Rofi theme
+ *
+ * Visual language:
+ * - secondary_container + primary border for the outer shell
+ * - surface_container_highest for individual pills
+ * - secondary for the selected/active item
+ * - primary for accents and prompts
+ * - generous rounded corners to match Waybar's pill UI
+ */
+
+* {
+    /* Base */
+    background:                   @surface;
+    foreground:                   @on-surface;
+    text-color:                   @on-surface;
+
+    /* Palette */
+    bg-primary:                   @surface;
+    bg-container:                 @secondary-container;
+    bg-pill:                      @surface-container-highest;
+    bg-pill-alt:                  @surface-container-high;
+    bg-selected:                 @secondary;
+
+    fg-primary:                   @on-surface;
+    fg-muted:                     @outline;
+    fg-accent:                    @primary;
+    fg-selected:                 @surface-container;
+
+    border-color:                @primary;
+    separatorcolor:              @primary;
+
+    /* Rofi internals */
+    normal-background:           @surface-container-highest;
+    normal-foreground:           @on-surface;
+
+    alternate-normal-background: @surface-container-high;
+    alternate-normal-foreground: @on-surface;
+
+    selected-normal-background:  @secondary;
+    selected-normal-foreground:  @surface-container;
+
+    active-background:           @secondary;
+    active-foreground:           @surface-container;
+
+    selected-active-background:  @secondary;
+    selected-active-foreground:  @surface-container;
+
+    urgent-background:           @surface-container-highest;
+    urgent-foreground:           @tertiary;
+
+    selected-urgent-background:  @tertiary;
+    selected-urgent-foreground:  @surface-container;
+
+    alternate-active-background: @surface-container-high;
+    alternate-active-foreground: @primary;
+
+    alternate-urgent-background: @surface-container-high;
+    alternate-urgent-foreground: @tertiary;
+
+    spacing:                     5px;
+    background-color:            transparent;
+}
+
+window {
+    background-color: @secondary-container;
+    border:           2px;
+    border-color:     @primary;
+    border-radius:    20px;
+    padding:          10px;
+    width:            60%;
+}
+
+mainbox {
+    background-color: transparent;
+    spacing:          4px;
+    children:         [inputbar, listview, message];
+}
+
+inputbar {
+    background-color: @surface-container-high;
+    border:           2px;
+    border-color:     @primary;
+    border-radius:    15px;
+    padding:          4px 8px;
+    margin:           0 0 4px;
+    spacing:          4px;
+    children:         [prompt, entry, overlay, num-filtered-rows, textbox-num-sep, num-rows, case-indicator];
+}
+
+prompt {
+    background-color: transparent;
+    text-color:       @primary;
+    padding:          0;
+    spacing:          0;
+}
+
+textbox-prompt-colon {
+    background-color: transparent;
+    text-color:       @outline;
+    padding:          0;
+    margin:           0 2px 0 0;
+    expand:           false;
+    str:              ":";
+}
+
+entry {
+    background-color: transparent;
+    text-color:       @on-surface;
+    placeholder-color: @outline;
+    placeholder:       "Search…";
+    padding:           0;
+    spacing:           0;
+    cursor:            text;
+}
+
+overlay {
+    background-color: transparent;
+    text-color:       @outline;
+    padding:          0;
+}
+
+num-filtered-rows,
+num-rows,
+textbox-num-sep,
+case-indicator {
+    background-color: transparent;
+    text-color:       @outline;
+    padding:          0;
+    spacing:          0;
+}
+
+listview {
+    background-color: transparent;
+    border:           0;
+    spacing:          3px;
+    padding:          0;
+    scrollbar:        true;
+    lines:            8;
+    fixed-height:     false;
+    dynamic:          true;
+}
+
+element {
+    background-color: @surface-container-high;
+    text-color:       @on-surface;
+    border:           0;
+    border-radius:    15px;
+    padding:          4px 8px;
+    margin:           3px 2px;
+    spacing:          6px;
+    cursor:           pointer;
+}
+
+element alternate {
+    background-color: @surface-container-high;
+}
+
+element normal {
+    background-color: @surface-container-highest;
+}
+
+element selected {
+    background-color: @secondary;
+    text-color:       @surface-container;
+}
+
+element active {
+    background-color: @surface-container-high;
+    text-color:       @primary;
+}
+
+element urgent {
+    background-color: @surface-container-highest;
+    text-color:       @tertiary;
+}
+
+element selected.active {
+    background-color: @secondary;
+    text-color:       @surface-container;
+}
+
+element selected.urgent {
+    background-color: @tertiary;
+    text-color:       @surface-container;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       inherit;
+    highlight:        inherit;
+    cursor:           inherit;
+    vertical-align:   0.5;
+}
+
+element-icon {
+    background-color: transparent;
+    size:             1em;
+    cursor:           inherit;
+}
+
+scrollbar {
+    width:        4px;
+    padding:      0;
+    border:       0;
+    handle-width: 4px;
+    handle-color: @outline;
+}
+
+message {
+    background-color: @surface-container-high;
+    border:           0;
+    border-radius:    15px;
+    padding:          4px 8px;
+}
+
+textbox {
+    background-color: transparent;
+    text-color:       @on-surface;
+    padding:          0;
+}

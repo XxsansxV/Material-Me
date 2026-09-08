@@ -33,7 +33,7 @@ Herein are gathered the dotfiles appertaining unto mine own Hyprland Material Me
 - **Waybar**
 - **SwayOSD**
 - **Mako**
-- **Wofi**
+- **Rofi**
 - **Wlogout**
 - **Zen Browser**
 
@@ -43,7 +43,7 @@ The style thereof beareth some likeness unto **Google Material Design**, from wh
 
 Before these dotfiles may serve thee faithfully, thou must first ensure that certain programs and utilities be present upon thy system. Lacking these, divers portions of the configuration may fail to appear or behave as intended.
 
-Amongst them are Hyprland, Hypridle, Hyprlock, Waybar, SwayOSD, Mako, Wofi, Wlogout, `awww`, Waypaper, Matugen, Kitty, Dolphin, Zen Browser, Rofimoji, Cliphist, Flameshot, Hyprpicker, KDE Plasma, and sundry smaller contrivances upon which these depend.
+Amongst them are Hyprland, Hypridle, Hyprlock, Waybar, SwayOSD, Mako, Rofi, Wlogout, `awww`, Waypaper, Matugen, Kitty, Dolphin, Zen Browser, Rofimoji, Cliphist, Flameshot, Hyprpicker, KDE Plasma, and sundry smaller contrivances upon which these depend.
 
 Thou shalt also require **JetBrains Mono Nerd Font**, lest thy icons appear as cursed squares, and **Bibata Modern Classic**, shouldst thou desire the cursor as it was intended.
 
@@ -105,7 +105,7 @@ Material Me is a personal Hyprland dotfiles collection with a look inspired by G
 
 - Hyprland, Hypridle, and Hyprlock
 - Waybar and SwayOSD
-- Mako, Wofi, and Wlogout
+- Mako, Rofi, and Wlogout
 - Waypaper and Matugen-based color generation
 - Kitty, Helix, Fish, Fastfetch, and Zen Browser theming
 
@@ -132,7 +132,7 @@ Core components:
 - Waybar
 - SwayOSD
 - Mako
-- Wofi and Wlogout
+- Rofi and Wlogout
 - Waypaper and `awww`
 - Matugen
 
@@ -173,7 +173,7 @@ Package names vary by Linux distribution. Some modules can be disabled or change
 
    ```bash
    chmod +x ~/.local/bin/material-me-apply \
-     ~/.local/bin/wofi-toggle \
+     ~/.local/bin/Rofi-toggle \
      ~/.local/bin/zen-color-symlink
    ```
 

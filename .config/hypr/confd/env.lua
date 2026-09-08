@@ -4,9 +4,13 @@
 
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Environment-variables/
 
+local programs = require("confd.programs")
+
 hl.env("XCURSOR_THEME", "Bibata-Modern-Classic")
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
+
+hl.env("TERMINAL", programs.terminal)
 
 hl.env("QT_QPA_PLATFORMTHEME", "kde")
 hl.env("QT_QUICK_CONTROLS_STYLE", "org.kde.desktop")

@@ -11,6 +11,7 @@ alias pls='sudo'
 alias bigfetch="fastfetch -c all.jsonc"
 alias tinyfetch="fastfetch -c small.jsonc"
 alias hx='helix'
+alias py='python'
 # alias GreetmeBash="bash $XDG_CONFIG_HOME/fish/GreetMeInBash.sh"
 
 # overwrite greeting

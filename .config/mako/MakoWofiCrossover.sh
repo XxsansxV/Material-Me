@@ -3,7 +3,7 @@
 SELECTION=$(makoctl history -j | jq -r '
     .[] |
     "[\(.app_name)] \(.summary) - \(.body) | \(.id)"
-  ' | wofi --dmenu --prompt "Suche ein notizen")
+  ' | rofi -dmenu -p "Notifs")
 
 NOTIF_ID=$(echo "$SELECTION" | awk -F ' | ' '{print $NF}')
 

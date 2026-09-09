@@ -1,3 +1,4 @@
+# Cheesecake is good
 # Material Me Dotfiles  
 Hyprland dotfiles with adaptive colors, as well as minimalistic customization shenanigan idk man
 

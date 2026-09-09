@@ -1,3 +1,4 @@
 action = copy
 skin-tone = neutral
 prompt = :)
+max-recent = 5

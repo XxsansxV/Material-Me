@@ -70,7 +70,7 @@ window {
     border-color:     @primary;
     border-radius:    20px;
     padding:          10px;
-    width:            60%;
+    width:            40%;
 }
 
 mainbox {

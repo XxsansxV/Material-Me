@@ -15,6 +15,7 @@ hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(programs.terminal))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(programs.fileManager))
 
 -- Wofi-related
+-- COUGH ROFI:w
 hl.bind("ALT + space", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.local/bin/wofi-toggle drun rofi 'rofi -show drun'"))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.local/bin/wofi-toggle run rofi 'rofi -show run --term=" .. programs.terminal .. "'"))
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.local/bin/wofi-toggle makohistory rofi 'bash " .. os.getenv("HOME") .. "/.config/mako/MakoWofiCrossover.sh'"))
@@ -27,6 +28,7 @@ hl.bind("print", hl.dsp.exec_cmd(programs.screenshot .. " gui"))
 hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("bash -lc waypaper"))
 hl.bind(mainMod .. " + SHIFT + C", hl.dsp.exec_cmd("hyprpicker -a"))
 hl.bind("CTRL + ALT + end", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.local/bin/wofi-toggle logout wlogout wlogout"))
+hl.bind("CTRL + SHIFT + ESCAPE", hl.dsp.exec_cmd("hyprctl kill"), { release = true })
 
 
 --- WINDOW MANAGER KEYBINDS
@@ -101,4 +103,7 @@ hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = tr
 -- hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%-"),                  { locked = true, repeating = true })
 -- 
 
-
+-- return mainMod so that input.lua can use it :>
+return {
+    mainMod = mainMod
+}

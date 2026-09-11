@@ -99,6 +99,7 @@ hl.config({
     misc = {
         force_default_wallpaper = -1,
         disable_hyprland_logo   = true,
+        -- anr_missed_pings = 30,
         -- vrr = 1,
     },
 })

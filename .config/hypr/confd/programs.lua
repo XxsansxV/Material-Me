@@ -7,7 +7,7 @@ local M = {}
 
 M.terminal    = "kitty"
 M.fileManager = "dolphin"
-M.menu        = "wofi"
+M.menu        = "rofi"
 M.browser     = "zen-browser"
 M.emojipicker = "rofimoji"
 M.screenshot  = "flameshot"

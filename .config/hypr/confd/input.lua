@@ -2,6 +2,8 @@
 ---- INPUT ----
 ---------------
 
+local keybounded= require("confd.keybinds")
+
 hl.config({
     input = {
         kb_layout  = "us",
@@ -17,15 +19,16 @@ hl.config({
             natural_scroll = true,
             scroll_factor = 0.5,
             disable_while_typing = false,
+            clickfinger_behavior = true,
         },
     },
     gestures = {
         workspace_swipe_distance = 700,
         workspace_swipe_cancel_ratio = 0.2,
         workspace_swipe_min_speed_to_force = 5,
-        workspace_swipe_direction_lock = true,
+        workspace_swipe_direction_lock = false,
         workspace_swipe_direction_lock_threshold = 10,
-        workspace_swipe_create_new = true,  
+        workspace_swipe_create_new = true,
     },
 })
 
@@ -50,6 +53,37 @@ hl.gesture({
         hl.plugin.hymission.close()
     end
 })
+
+hl.gesture({
+    fingers = 4,
+    direction = "up",
+    action = function()
+        hl.exec_cmd("wofi-toggle drun rofi 'rofi -show drun'")
+    end
+})
+
+hl.gesture({
+    fingers = 4,
+    direction = "down",
+    action = function()
+        hl.exec_cmd("wofi-toggle logout wlogout wlogout")
+    end
+})
+
+hl.gesture({
+    fingers = 3,
+    mods = keybounded.mainMod,
+    direction = "swipe",
+    action = "resize",
+})
+
+-- hl.gesture({
+--     fingers = 3,
+--     -- mods = keybounded.mainMod,
+--     direction = "pinch",
+--     action = "fullscreen"
+-- })
+
 -- Example per-device config
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Devices/ for more
 -- hl.device({
@@ -62,3 +96,4 @@ hl.device({
     sensitivity = 0.2,
     accel_profile = "adaptive",
 })
+

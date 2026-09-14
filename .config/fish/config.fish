@@ -30,3 +30,7 @@ alias py='python'
 function fish_greeting
     GreetmeBash greet
 end
+
+function fish_command_not_found
+    echo -e "I don't think the command \033[;31m$argv[1]\033[0m exists bro"
+end

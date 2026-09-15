@@ -1,6 +1,8 @@
 [config]
+caching = true
 reload-apps = false
 prefer = "saturation"
+mode = "dark"
 
 [templates.hyprland]
 input_path = "~/.config/matugen/templates/hyprland-colors.lua.template"

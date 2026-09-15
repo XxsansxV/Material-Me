@@ -95,6 +95,24 @@ hl.window_rule({
     float = true,
 })
 
+hl.window_rule({
+    name = "soundsoundsoundsoundblaststoaircausingairtofloatityay",
+    match = { class = "kcm_pulseaudio" },
+    float = true,
+})
+
+hl.window_rule({
+    name = "onair_kcmnetwork",
+    match = { class = "kcm_networkmanagement" },
+    float = true,
+})
+
+hl.window_rule({
+    name = "bluetoothkcm_flieeeee",
+    match = { class = "kcm_bluetooth" },
+    float = true,
+})
+
 -- From here on, prob layer rules.
 
 hl.layer_rule({

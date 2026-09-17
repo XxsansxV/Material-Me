@@ -173,7 +173,7 @@ Package names vary by Linux distribution. Some modules can be disabled or change
 
    ```bash
    chmod +x ~/.local/bin/material-me-apply \
-     ~/.local/bin/Rofi-toggle \
+     ~/.local/bin/wofi-toggle \
      ~/.local/bin/zen-color-symlink
    ```
 

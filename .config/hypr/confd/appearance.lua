@@ -3,7 +3,7 @@
 -----------------------
 
 -- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
- 
+
 local ok, colors = pcall(require, "confd.colors")
 if not ok then
     colors = {
@@ -99,7 +99,7 @@ hl.config({
     misc = {
         force_default_wallpaper = -1,
         disable_hyprland_logo   = true,
-        -- anr_missed_pings = 30,
+        anr_missed_pings = 30,
         -- vrr = 1,
     },
 })

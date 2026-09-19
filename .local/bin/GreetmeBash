@@ -64,6 +64,7 @@ greet_function() {
   greetings+=("Моя ${MAGENTA}любимая,${RESET}")
   greetings+=("${YELLOW}Катенка.${RESET}")
   greetings+=("No one knows and no one has to, right? ;)")
+  greetings+=("Fuck my noisy ass mind.")
 
   # from reddit. seems like they didn't  like the question a lot, lol. how it works is greetings+=("messagehere") # the reddit user
   greetings+=("If the sun rises at midnight, pray you do not see tomorrow") # un-important-human

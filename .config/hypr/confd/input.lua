@@ -54,6 +54,13 @@ hl.gesture({
     end
 })
 
+-- Replace the 2 blocks of hl.gesture with this for hymission enter/exit smoothness. though it has quirks when it comes to window z layers so...
+-- hl.plugin.hymission.gesture({
+--     fingers = 3,
+--     direction = "vertical",
+--     action = "toggle",
+-- })
+
 hl.gesture({
     fingers = 4,
     direction = "up",
@@ -77,12 +84,12 @@ hl.gesture({
     action = "resize",
 })
 
--- hl.gesture({
---     fingers = 3,
---     -- mods = keybounded.mainMod,
---     direction = "pinch",
---     action = "fullscreen"
--- })
+hl.gesture({
+    fingers = 3,
+    -- mods = keybounded.mainMod,
+    direction = "pinch",
+    action = "fullscreen"
+})
 
 -- Example per-device config
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Devices/ for more

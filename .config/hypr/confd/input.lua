@@ -30,6 +30,9 @@ hl.config({
         workspace_swipe_direction_lock_threshold = 10,
         workspace_swipe_create_new = true,
     },
+    cursor = {
+        inactive_timeout = 5.0
+    }
 })
 
 hl.gesture({

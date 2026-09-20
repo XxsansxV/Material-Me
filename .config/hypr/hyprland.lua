@@ -15,4 +15,7 @@ require("confd.input")
 require("confd.autostart")
 require("confd.keybinds")
 require("confd.windowrules")
+
+-- plugins.
 require("confd.hymission")
+require("confd.dyncursor")

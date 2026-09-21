@@ -87,12 +87,12 @@ hl.gesture({
     action = "resize",
 })
 
-hl.gesture({
-    fingers = 3,
-    -- mods = keybounded.mainMod,
-    direction = "pinch",
-    action = "fullscreen"
-})
+-- hl.gesture({
+--     fingers = 3,
+--     -- mods = keybounded.mainMod,
+--     direction = "pinch",
+--     action = "fullscreen"
+-- })
 
 -- Example per-device config
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Devices/ for more

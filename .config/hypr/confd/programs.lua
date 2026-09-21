@@ -11,6 +11,6 @@ M.menu        = "rofi"
 M.browser     = "zen-browser"
 M.emojipicker = "rofimoji"
 M.screenshot  = "flameshot"
-M.osd         = "swayosd-server" 
+M.osd         = "swayosd-server"
 
 return M

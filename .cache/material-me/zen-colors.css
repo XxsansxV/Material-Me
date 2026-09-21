@@ -3,27 +3,27 @@
 
 :root {
   /* Accent colors */
-  --primary: rgb(184, 195, 255);
-  --secondary: rgb(195, 197, 221);
-  --tertiary: rgb(228, 186, 217);
+  --primary: rgb(255, 178, 189);
+  --secondary: rgb(229, 189, 193);
+  --tertiary: rgb(234, 191, 144);
 
   /* Darker muted variants of the accents good for backgrounds active states */
-  --primary-container: rgb(55, 67, 121);
-  --secondary-container: rgb(66, 70, 89);
-  --tertiary-container: rgb(92, 61, 86);
+  --primary-container: rgb(114, 51, 63);
+  --secondary-container: rgb(92, 63, 67);
+  --tertiary-container: rgb(95, 65, 28);
 
   /* Base surface tones darkest to lightest */
-  --surface-dim: rgb(18, 19, 24);
-  --surface: rgb(18, 19, 24);
-  --surface-bright: rgb(56, 57, 63);
-  --surface-container-lowest: rgb(13, 14, 19);
-  --surface-container-low: rgb(27, 27, 33);
-  --surface-container: rgb(31, 31, 37);
-  --surface-container-high: rgb(41, 42, 47);
-  --surface-container-highest: rgb(52, 52, 58);
+  --surface-dim: rgb(25, 17, 18);
+  --surface: rgb(25, 17, 18);
+  --surface-bright: rgb(65, 55, 56);
+  --surface-container-lowest: rgb(20, 12, 13);
+  --surface-container-low: rgb(34, 25, 26);
+  --surface-container: rgb(38, 29, 30);
+  --surface-container-high: rgb(49, 40, 41);
+  --surface-container-highest: rgb(60, 50, 51);
 
   /* Text foreground colors */
-  --on-surface: rgb(227, 225, 233);
-  --on-surface-variant: rgb(198, 197, 208);
-  --outline: rgb(144, 144, 154);
+  --on-surface: rgb(240, 222, 224);
+  --on-surface-variant: rgb(214, 194, 195);
+  --outline: rgb(159, 140, 142);
 }

@@ -41,28 +41,29 @@ hl.gesture({
     action    = "workspace",
 })
 
-hl.gesture({
-    fingers   = 3,
-    direction = "up",
-    action    = function()
-        hl.plugin.hymission.open()
-    end
-})
+-- These two blocks are coansofwqbfoqelhf
+-- hl.gesture({
+--     fingers   = 3,
+--     direction = "up",
+--     action    = function()
+--         hl.plugin.hymission.open()
+--     end
+-- })
 
-hl.gesture({
-    fingers   = 3,
-    direction = "down",
-    action    = function()
-        hl.plugin.hymission.close()
-    end
-})
+-- hl.gesture({
+--     fingers   = 3,
+--     direction = "down",
+--     action    = function()
+--         hl.plugin.hymission.close()
+--     end
+-- })
 
 -- Replace the 2 blocks of hl.gesture with this for hymission enter/exit smoothness. though it has quirks when it comes to window z layers so...
--- hl.plugin.hymission.gesture({
---     fingers = 3,
---     direction = "vertical",
---     action = "toggle",
--- })
+hl.plugin.hymission.gesture({
+    fingers = 3,
+    direction = "vertical",
+    action = "toggle",
+})
 
 hl.gesture({
     fingers = 4,

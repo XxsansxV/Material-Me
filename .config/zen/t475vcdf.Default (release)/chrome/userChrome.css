@@ -6,6 +6,10 @@
   --zen-primary-color: var(--primary) !important;
 }
 
+#browser {
+  background: var(--secondary-container) !important;
+}
+
 #zen-toolbar-background {
   border-radius: 15px !important;
   background-color: var(--secondary-container) !important;

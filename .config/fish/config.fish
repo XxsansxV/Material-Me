@@ -6,12 +6,29 @@ set -q XDG_CONFIG_HOME; or set XDG_CONFIG_HOME "$HOME/.config"
 set -gx EDITOR helix
 set -gx VISUAL helix
 
-alias dotgit='git --git-dir=$HOME/.dotfiles-backup --work-tree=$HOME'
 alias pls='sudo'
 alias bigfetch="fastfetch -c all.jsonc"
 alias tinyfetch="fastfetch -c small.jsonc"
-alias hx='helix'
-alias py='python'
+
+abbr -a dotgit 'git --git-dir=$HOME/.dotfiles-backup --work-tree=$HOME'
+abbr -a hx helix
+abbr -a py python
+
+abbr -a update 'sudo cachyos-rate-mirrors && sudo pacman -Syu'
+abbr -a cleanup 'sudo pacman -Rns (pacman -Qtdq)'
+abbr -a grubup 'sudo grub-mkconfig -o /boot/grub/grub.cfg'
+abbr -a fixpacman 'sudo rm /var/lib/pacman/db.lck'
+
+abbr -a .. 'cd ..'
+abbr -a ... 'cd ../..'
+abbr -a .... 'cd ../../..'
+abbr -a ..... 'cd ../../../..'
+abbr -a ...... 'cd ../../../../..'
+
+abbr -a wget 'wget -c'
+abbr -a tarnow 'tar -acf'
+abbr -a untar 'tar -zxvf'
+
 # alias GreetmeBash="bash $XDG_CONFIG_HOME/fish/GreetMeInBash.sh"
 
 # overwrite greeting

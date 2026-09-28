@@ -31,7 +31,8 @@ hl.config({
         workspace_swipe_create_new = true,
     },
     cursor = {
-        inactive_timeout = 5.0
+        inactive_timeout = 5.0,
+        no_hardware_cursors = 2
     }
 })
 

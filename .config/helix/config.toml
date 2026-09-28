@@ -2,6 +2,9 @@ theme = "tokyonight"
 
 [editor]
 shell = ["fish", "-c"]
+idle-timeout = 50
+completion-timeout = 50
+completion-trigger-len = 1
 
 [editor.soft-wrap]
 enable = true

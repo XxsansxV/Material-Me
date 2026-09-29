@@ -16,23 +16,23 @@ hl.config({
         sensitivity  = 0, -- -1.0 - 1.0, 0 means no modification.
 
         touchpad = {
-            natural_scroll = true,
-            scroll_factor = 0.5,
+            natural_scroll       = true,
+            scroll_factor        = 0.5,
             disable_while_typing = false,
             clickfinger_behavior = true,
         },
     },
     gestures = {
-        workspace_swipe_distance = 700,
-        workspace_swipe_cancel_ratio = 0.2,
-        workspace_swipe_min_speed_to_force = 5,
-        workspace_swipe_direction_lock = false,
+        workspace_swipe_distance                 = 700,
+        workspace_swipe_cancel_ratio             = 0.2,
+        workspace_swipe_min_speed_to_force       = 5,
+        workspace_swipe_direction_lock           = false,
         workspace_swipe_direction_lock_threshold = 10,
-        workspace_swipe_create_new = true,
+        workspace_swipe_create_new               = true,
     },
     cursor = {
         inactive_timeout = 5.0,
-        no_hardware_cursors = 2
+        no_hardware_cursors = false
     }
 })
 
@@ -61,32 +61,32 @@ hl.gesture({
 
 -- Replace the 2 blocks of hl.gesture with this for hymission enter/exit smoothness. though it has quirks when it comes to window z layers so...
 hl.plugin.hymission.gesture({
-    fingers = 3,
+    fingers   = 3,
     direction = "vertical",
-    action = "toggle",
+    action    = "toggle",
 })
 
 hl.gesture({
-    fingers = 4,
+    fingers   = 4,
     direction = "up",
-    action = function()
+    action    = function()
         hl.exec_cmd("wofi-toggle drun rofi 'rofi -show drun'")
     end
 })
 
 hl.gesture({
-    fingers = 4,
+    fingers   = 4,
     direction = "down",
-    action = function()
+    action    = function()
         hl.exec_cmd("wofi-toggle logout wlogout wlogout")
     end
 })
 
 hl.gesture({
-    fingers = 3,
-    mods = keybounded.mainMod,
+    fingers   = 3,
+    mods      = keybounded.mainMod,
     direction = "swipe",
-    action = "resize",
+    action    = "resize",
 })
 
 -- hl.gesture({
@@ -104,8 +104,8 @@ hl.gesture({
 -- })
 --
 hl.device({
-    name = "asup1300:00-093a:2009-touchpad",
-    sensitivity = 0.2,
+    name          = "asup1300:00-093a:2009-touchpad",
+    sensitivity   = 0.2,
     accel_profile = "adaptive",
 })
 

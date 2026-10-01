@@ -29,6 +29,9 @@ abbr -a wget 'wget -c'
 abbr -a tarnow 'tar -acf'
 abbr -a untar 'tar -zxvf'
 
+abbr -a mount-atlasfriend 'sudo mount -t ntfs-3g -o rw /dev/nvme0n1p4 /mnt/atlasfriend/
+'
+
 # alias GreetmeBash="bash $XDG_CONFIG_HOME/fish/GreetMeInBash.sh"
 
 # overwrite greeting

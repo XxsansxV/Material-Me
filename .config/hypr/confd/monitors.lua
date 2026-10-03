@@ -8,6 +8,7 @@ hl.monitor({
     mode     = "preferred",
     position = "auto",
     scale    = "1",
+    bitdepth = 10,
 })
 
 -- hl.monitor({

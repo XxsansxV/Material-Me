@@ -1,14 +1,14 @@
 * {
-    primary: #ffb2bd;
-    secondary: #e5bdc1;
-    tertiary: #eabf90;
-    primary-container: #72333f;
-    secondary-container: #5c3f43;
-    tertiary-container: #5f411c;
-    on-surface: #f0dee0;
-    surface: #191112;
-    surface-container: #261d1e;
-    surface-container-high: #312829;
-    surface-container-highest: #3c3233;
-    outline: #9f8c8e;
+    primary: #ffffff;
+    secondary: #c6c6c6;
+    tertiary: #e2e2e2;
+    primary-container: #d4d4d4;
+    secondary-container: #474747;
+    tertiary-container: #919191;
+    on-surface: #e2e2e2;
+    surface: #131313;
+    surface-container: #1f1f1f;
+    surface-container-high: #2a2a2a;
+    surface-container-highest: #353535;
+    outline: #919191;
 }

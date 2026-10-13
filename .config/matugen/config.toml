@@ -16,6 +16,10 @@ output_path = "~/.config/waybar/colors.css"
 input_path = "~/.config/matugen/templates/rgba-definecolors-css.template"
 output_path = "~/.config/wlogout/colors.css"
 
+[templates.wleave]
+input_path = "~/.config/matugen/templates/rgba-definecolors-css.template"
+output_path = "~/.config/wleave/colors.css"
+
 [templates.wofi]
 input_path = "~/.config/matugen/templates/rgb-definecolors-css.template"
 output_path = "~/.config/wofi/colors.css"

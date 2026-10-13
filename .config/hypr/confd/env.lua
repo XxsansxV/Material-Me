@@ -17,6 +17,8 @@ hl.env("TERMINAL", programs.terminal)
 hl.env("QT_QPA_PLATFORMTHEME", "kde")
 hl.env("QT_QUICK_CONTROLS_STYLE", "org.kde.desktop")
 
+hl.env("SAL_USE_VCLPLUGIN", "kf6")
+
 hl.env("ELECTRON_OZONE_PLATFORM_HINT", "auto")
 
 hl.env("XDG_MENU_PREFIX", "arch-")

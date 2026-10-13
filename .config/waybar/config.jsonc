@@ -207,7 +207,7 @@
     // "timezone": "America/New_York",
     "format": "{:%H:%M | %d-%m-%Y}",
     "tooltip-format": "<tt>{calendar}</tt>",
-    "on-click": "merkuro-calendar",
+    "on-click": "kclock",
     "calendar": {
       "format": {
         "months": "<big>{}</big>",
@@ -247,6 +247,7 @@
     ]
   },
   "battery": {
+    "on-click": "kcmshell6 kcm_energyinfo",
     "states": {
       // "good": 95,
       "warning": 30,
@@ -256,7 +257,6 @@
     "format-full": "{icon} {capacity}%",
     "format-charging": "󰃨 {capacity}%",
     "format-plugged": " {capacity}%",
-    "format-alt": "{icon} {time}",
     // "format-good": "", // An empty format will hide the module
     // "format-full": "",
     "format-icons": [

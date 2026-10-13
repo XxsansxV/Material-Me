@@ -113,6 +113,12 @@ hl.window_rule({
     float = true,
 })
 
+-- hl.window_rule({
+--     name = "screw_zoom",
+--     match = { class = "^(zoom)$" },
+--     float = true,
+-- })
+
 -- From here on, prob layer rules.
 
 hl.layer_rule({

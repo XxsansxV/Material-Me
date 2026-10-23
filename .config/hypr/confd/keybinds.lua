@@ -25,6 +25,7 @@ hl.bind(mainMod .. " + period", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.local/bi
 -- Others
 hl.bind(mainMod .. " + CTRL + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind("print", hl.dsp.exec_cmd(programs.screenshot .. " gui"))
+hl.bind("SHIFT + print", hl.dsp.exec_cmd(programs.screenshot .. " full -c"))
 hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("bash -lc waypaper"))
 hl.bind(mainMod .. " + SHIFT + C", hl.dsp.exec_cmd("hyprpicker -a"))
 hl.bind("CTRL + ALT + end", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.local/bin/wofi-toggle logout wlogout wlogout"))
@@ -35,7 +36,7 @@ hl.bind("CTRL + SHIFT + ESCAPE", hl.dsp.exec_cmd("hyprctl kill"), { release = tr
 
 -- regular
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
-hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ "fullscreen", toggle}))
+hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ "fullscreen", "toggle"}))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
 -- hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))

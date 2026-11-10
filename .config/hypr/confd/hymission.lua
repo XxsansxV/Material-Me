@@ -32,5 +32,5 @@ if hl.plugin.hymission then
       action    = "toggle",
   })
 else
-  hl.notification.create({text="Hyprland plugins : hymission doesn't exist!", timeout=5, color="red"})
+  hl.notification.create({text="Hyprland plugins : hymission doesn't exist!", timeout=10000, icon=0})
 end

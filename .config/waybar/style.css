@@ -43,8 +43,8 @@ button:hover {
   color: #ffffff;
   border-radius: 100px;
   background-color: @surface_container_high;
-  transition: background-color 150ms ease-in-out,
-    min-width 150ms ease-in-out;
+  transition: background-color 200ms ease-in-out,
+    min-width 200ms ease-in-out;
 }
 
 #workspaces button.focused,
@@ -95,7 +95,7 @@ button:hover {
   background-color: @secondary_container;
   border: 2px solid @primary;
   min-width: 50px;
-  transition: min-width 150ms ease-in-out;
+  transition: min-width 200ms ease-in-out;
 }
 
 #mode {
@@ -127,6 +127,7 @@ button:hover {
 #mpd {
   padding: 0 10px;
   color: @on_surface;
+  transition: padding 200ms ease-in-out;
 }
 
 #pulseaudio:hover,
@@ -140,7 +141,8 @@ button:hover {
 #clock:hover {
   background-color: @secondary;
   color: @surface_container;
-  transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
+  /* padding: 0 14px; */
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out, padding 200ms ease-in-out;
 }
 
 #window {
@@ -268,7 +270,7 @@ label:focus {
 #custom-swaydim {
   padding: 0 10px;
   color: @on_surface;
-  transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
 }
 
 #custom-swaydim:hover {
@@ -285,7 +287,7 @@ label:focus {
   margin: 0 2px;
   color: @surface_container_highest;
   background-color: @secondary;
-  transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
 }
 
 #custom-power:hover {

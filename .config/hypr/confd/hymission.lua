@@ -31,4 +31,6 @@ if hl.plugin.hymission then
       direction = "vertical",
       action    = "toggle",
   })
+else
+  hl.notification.create({text="Hyprland plugins : hymission doesn't exist!", timeout=5, color="red"})
 end

@@ -18,4 +18,6 @@ if hl.plugin.dynamic_cursors then
       }
     }
   })
+else
+  hl.notification.create({text="Hyprland plugins : dynamic_cursors doesn't exist!", timeout=5, color="red"})
 end

@@ -43,7 +43,7 @@ The style thereof beareth some likeness unto **Google Material Design**, from wh
 
 Before these dotfiles may serve thee faithfully, thou must first ensure that certain programs and utilities be present upon thy system. Lacking these, divers portions of the configuration may fail to appear or behave as intended.
 
-Amongst them are Hyprland, Hypridle, Hyprlock, Waybar, SwayOSD, Mako, Rofi, Wlogout, `awww`, Waypaper, Matugen, Kitty, Dolphin, Zen Browser, Rofimoji, Cliphist, Flameshot, Hyprpicker, KDE Plasma, and sundry smaller contrivances upon which these depend.
+Amongst them are Hyprland, Hypridle, Hyprlock, Waybar, SwayOSD, Mako, Rofi, Wlogout, `awww`, Waypaper, Matugen, Kitty, Dolphin, Zen Browser, Rofimoji, Cliphist, Flameshot, Hyprpicker, Swaydim, KDE Plasma, and sundry smaller contrivances upon which these depend.
 
 Thou shalt also require **JetBrains Mono Nerd Font**, lest thy icons appear as cursed squares, and **Bibata Modern Classic**, shouldst thou desire the cursor as it was intended.
 
@@ -146,6 +146,7 @@ Applications and utilities referenced by the configuration:
 - Cliphist and `wl-clipboard`
 - Flameshot
 - Hyprpicker
+- Swaydim
 - Playerctl
 - jq
 - poweralertd

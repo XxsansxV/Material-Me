@@ -29,13 +29,14 @@ abbr -a wget 'wget -c'
 abbr -a tarnow 'tar -acf'
 abbr -a untar 'tar -zxvf'
 
-abbr -a mount-atlasfriend 'sudo mount -t ntfs-3g -o rw /dev/nvme0n1p4 /mnt/atlasfriend/
-'
+abbr -a mount-atlasfriend 'sudo mount -t ntfs-3g -o rw /dev/nvme0n1p4 /mnt/atlasfriend/'
 
 # alias GreetmeBash="bash $XDG_CONFIG_HOME/fish/GreetMeInBash.sh"
-
+#
 # overwrite greeting
 # potentially disabling fastfetch
+#
+# that was legacy era code when i didn't know what a ~/.local/bin was
 
 # I tried delaying fish_greeting here so that it would fit, turns out it wasn't because of the window size lmao
 # function fish_greeting
@@ -54,3 +55,5 @@ end
 function fish_command_not_found
     echo -e "I don't think the command \033[;31m$argv[1]\033[0m exists bro"
 end
+
+# string match -q "$TERM_PROGRAM" "kiro" and . (kiro --locate-shell-integration-path fish)

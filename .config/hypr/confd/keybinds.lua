@@ -48,10 +48,10 @@ hl.bind(mainMod .. " + SHIFT + j", hl.dsp.window.move({ direction = "down" }))
 hl.bind(mainMod .. " + SHIFT + k", hl.dsp.window.move({ direction = "up" }))
 
 -- Move focus with mainMod + arrow keys
-hl.bind(mainMod .. " + h",  hl.dsp.focus({ direction = "left" }))
+hl.bind(mainMod .. " + h", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + l", hl.dsp.focus({ direction = "right" }))
-hl.bind(mainMod .. " + j",    hl.dsp.focus({ direction = "down" }))
-hl.bind(mainMod .. " + k",  hl.dsp.focus({ direction = "up" }))
+hl.bind(mainMod .. " + j", hl.dsp.focus({ direction = "down" }))
+hl.bind(mainMod .. " + k", hl.dsp.focus({ direction = "up" }))
 
 -- Mouse window management
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
@@ -71,7 +71,8 @@ hl.bind(mainMod .. " + S",         hl.dsp.workspace.toggle_special("magic"))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
 -- hymissions thingn yaayyyyy (reenable sometimes again)
-hl.bind(mainMod .. " + W", hl.plugin.hymission.toggle)
+-- don't, it's been moved to hymission.lua
+-- hl.bind(mainMod .. " + W", hl.plugin.hymission.toggle)
 
 
 --- MULTIMEDIA KEYS
@@ -86,8 +87,8 @@ hl.bind("XF86AudioMicMute", hl.dsp.exec_cmd([[sh -c "swayosd-client --input-volu
 
 -- software dimming - swaydim wrapper script invoker
 hl.bind("SHIFT + XF86MonBrightnessDown", hl.dsp.exec_cmd("swaydim down"), { locked = true, repeating = true })
-hl.bind("SHIFT + XF86MonBrightnessUp",   hl.dsp.exec_cmd("swaydim up"),   { locked = true, repeating = true })
-hl.bind(mainMod .. " + SHIFT + D",        hl.dsp.exec_cmd("swaydim toggle"), { locked = true, repeating = false })
+hl.bind("SHIFT + XF86MonBrightnessUp", hl.dsp.exec_cmd("swaydim up"), { locked = true, repeating = true })
+hl.bind(mainMod .. " + SHIFT + D", hl.dsp.exec_cmd("swaydim toggle"), { locked = true, repeating = false })
 
 -- Media control, Requires playerctl
 hl.bind("XF86AudioNext",  hl.dsp.exec_cmd("playerctl next"),       { locked = true })

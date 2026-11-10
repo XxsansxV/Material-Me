@@ -1,3 +1,5 @@
+local keybounded = require("confd.keybinds")
+
 local ok, colors = pcall(require, "confd.colors")
 if not ok then
     colors = {
@@ -20,3 +22,5 @@ hl.config({
     }
   }
 })
+
+hl.bind(keybounded.mainMod .. " + W", hl.plugin.hymission.toggle)

@@ -60,11 +60,12 @@ hl.gesture({
 -- })
 
 -- Replace the 2 blocks of hl.gesture with this for hymission enter/exit smoothness. though it has quirks when it comes to window z layers so...
-hl.plugin.hymission.gesture({
-    fingers   = 3,
-    direction = "vertical",
-    action    = "toggle",
-})
+-- don't it's been moved to hymission.lua as well
+-- hl.plugin.hymission.gesture({
+--     fingers   = 3,
+--     direction = "vertical",
+--     action    = "toggle",
+-- })
 
 hl.gesture({
     fingers   = 4,

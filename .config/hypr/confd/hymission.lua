@@ -24,3 +24,9 @@ hl.config({
 })
 
 hl.bind(keybounded.mainMod .. " + W", hl.plugin.hymission.toggle)
+
+hl.plugin.hymission.gesture({
+    fingers   = 3,
+    direction = "vertical",
+    action    = "toggle",
+})

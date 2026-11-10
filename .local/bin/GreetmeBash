@@ -41,13 +41,13 @@ greet_function() {
 
 case "$1" in
   help|--help|-h)
-    echo ""
-    echo "Usage: GreetMeBash [ help | notify | greet | list ]"
-    echo "--------------------------------------------"
-    echo "=-=[ help ] shows this page, duh"
-    echo "=-=[ notify ] sends output thru notify-send"
-    echo "=-=[ greet ] sends the output through the terminal directly."
-    echo "=-=[ list ] prints a continuous string of the entire list of available greetings."
+     echo ""
+    echo -e "Usage: ${CYAN}GreetMeBash${RESET} [ help | notify | greet | list ]"
+    echo -e "---------------------------------------------------"
+    echo -e "=-=[ help ]   shows this page, duh"
+    echo -e "=-=[ notify ] sends output thru notify-send"
+    echo -e "=-=[ greet ]  sends the output through the terminal directly."
+    echo -e "=-=[ list ]   prints a continuous string of the entire list of available greetings."
     echo ""
     ;;
 
@@ -77,7 +77,7 @@ case "$1" in
     # echo "that SHOULD'VE worked. If not, idk man"
     ;;
   list)
-    echo -e "${GREETINGS[@]}"
+    printf '%s\n' "${GREETINGS[@]}"
     ;;
   "")
     echo ""

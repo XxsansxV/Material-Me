@@ -10,8 +10,6 @@
 window#waybar {
   margin: 10px 10px 0px 10px;
   background: transparent;
-  box-shadow: none;
-  color: #ffffff;
 }
 
 button {
@@ -27,7 +25,7 @@ button:hover {
   background-color: @secondary_container;
   border: 2px solid @primary;
   padding: 4px;
-  border-radius: 100px;
+  border-radius: 999px;
 }
 
 #workspaces button label {
@@ -127,9 +125,12 @@ button:hover {
 #mpd {
   padding: 0 10px;
   color: @on_surface;
-  transition: padding 200ms ease-in-out;
 }
 
+/* Workaround for waybar 0.16 custom modules: the #custom-* name sits on the
+   label, but PRELIGHT is only set on its parent box (GTK doesn't propagate
+   hover to children). The `box:hover >` selectors can be removed once the
+   upstream fix (PR #5473) lands; the plain :hover ones then work again. */
 #pulseaudio:hover,
 #backlight:hover,
 #network:hover,
@@ -138,15 +139,13 @@ button:hover {
 #battery:hover,
 #custom-dnd:hover,
 #custom-media:hover,
+box:hover > #custom-dnd,
+box:hover > #custom-media,
 #clock:hover {
   background-color: @secondary;
   color: @surface_container;
   /* padding: 0 14px; */
-  transition: background-color 200ms ease-in-out, color 200ms ease-in-out, padding 200ms ease-in-out;
-}
-
-#window {
-  margin: 0 4px;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
 }
 
 tooltip {
@@ -173,22 +172,12 @@ tooltip {
 #custom-media {
   border-radius: 999px;
   background-color: @surface_container_highest;
-  padding: 0 0;
+  padding: 0;
   margin: 0 2px;
 }
 
 #clock {
   padding: 0 10px;
-}
-
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left>widget:first-child>#workspaces {
-  margin-left: 0;
-}
-
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right>widget:last-child>#workspaces {
-  margin-right: 0;
 }
 
 #battery,
@@ -222,63 +211,26 @@ tooltip {
   animation-direction: alternate;
 }
 
-#tlp-pd {
-  padding-right: 15px;
-}
-
-#tlp-pd.performance {
-  background-color: #f53c3c;
-  color: #ffffff;
-}
-
-#tlp-pd.balanced {
-  background-color: #2980b9;
-  color: #ffffff;
-}
-
-#tlp-pd.power-saver {
-  background-color: #2ecc71;
-  color: #000000;
-}
-
 label:focus {
   background-color: #000000;
 }
 
-#cpu {
-  background-color: #2ecc71;
-  color: #000000;
-}
-
-#memory {
-  background-color: #9b59b6;
-}
-
-#disk {
-  background-color: #964B00;
-}
-
-#wireplumber {
-  background-color: #fff0f5;
-  color: #000000;
-}
-
-#wireplumber.muted {
-  background-color: #f53c3c;
-}
-
 #custom-swaydim {
-  padding: 0 10px;
   color: @on_surface;
   transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
 }
 
-#custom-swaydim:hover {
+#custom-swaydim:hover,
+box:hover > #custom-swaydim {
   background-color: @secondary;
   color: @surface_container;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
 }
 
-#custom-swaydim.dimmed {
+/* `box:hover > #custom-swaydim` outranks plain `.dimmed`, so restate the
+   dimmed style with the hovered-parent selector to keep it visible on hover. */
+#custom-swaydim.dimmed,
+box:hover > #custom-swaydim.dimmed {
   background-color: @tertiary;
   color: @surface_container;
 }
@@ -290,7 +242,8 @@ label:focus {
   transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
 }
 
-#custom-power:hover {
+#custom-power:hover,
+box:hover > #custom-power {
   color: inherit;
   background-color: @surface_container_highest;
 }
@@ -317,62 +270,12 @@ label:focus {
   background-color: #eb4d4b;
 }
 
-#idle_inhibitor {
-  background-color: #2d3436;
-}
-
-#idle_inhibitor.activated {
-  background-color: #ecf0f1;
-  color: #2d3436;
-}
-
-#mpd {
-  background-color: #66cc99;
-  color: #2a5c45;
-}
-
-#mpd.disconnected {
-  background-color: #f53c3c;
-}
-
-#mpd.stopped {
-  background-color: #90b1b1;
-}
-
-#mpd.paused {
-  background-color: #51a37a;
-}
-
 #language {
   background: #00b093;
   color: #740864;
   padding: 0 5px;
   margin: 0 5px;
   min-width: 16px;
-}
-
-#keyboard-state {
-  background: #97e1ad;
-  color: #000000;
-  padding: 0 0px;
-  margin: 0 5px;
-  min-width: 16px;
-}
-
-#keyboard-state>label {
-  padding: 0 5px;
-}
-
-#keyboard-state>label.locked {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad.empty {
-  background-color: transparent;
 }
 
 #privacy {

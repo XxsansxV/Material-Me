@@ -187,7 +187,7 @@
     // "icon-size": 21,
     "spacing": 10,
     // "icons": {
-    "blueman": "bluetooth",
+    "blueman": "bluetooth"
     // "on-click": "blueman-manager"
     //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
     // }
@@ -323,7 +323,7 @@
       "default": "󰝚"
     },
     "on-click": "playerctl play-pause",
-    "on-click-right": "open the running mediaplayer i guess hello???",
+    // "on-click-right": "open the running mediaplayer i guess hello???",
     "on-scroll-up": "playerctl next",
     "on-scroll-down": "playerctl previous",
     "escape": true,

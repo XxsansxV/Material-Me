@@ -1,3 +1,7 @@
+-------------------
+---- HYMISSION ----
+-------------------
+
 if hl.plugin.hymission then
   local keybounded = require("confd.keybinds")
 
@@ -32,5 +36,6 @@ if hl.plugin.hymission then
       action    = "toggle",
   })
 else
-  hl.notification.create({text="Hyprland plugins : hymission doesn't exist!", timeout=10000, icon=0})
+  -- the notif appeared 3 times when the plugin was loaded... don't do that.
+  -- hl.notification.create({text="Hyprland plugins : hymission doesn't exist!", timeout=10000, icon=0})
 end

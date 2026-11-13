@@ -1,11 +1,14 @@
 -- Use once dynamic cursor works.
+-------------------------
+---- DYNAMIC CURSORS ----
+-------------------------
 if hl.plugin.dynamic_cursors then
   hl.config({
     plugin = {
       dynamic_cursors = {
         enabled = true,
         mode = "tilt",
-        threshold = 2,
+        threshold = 1,
 
         shake = {
           enabled = true,
@@ -19,5 +22,6 @@ if hl.plugin.dynamic_cursors then
     }
   })
 else
-  hl.notification.create({text="Hyprland plugins : dynamic_cursors doesn't exist!", timeout=10000, icon=0})
+  -- same thing happened as on hymission
+  -- hl.notification.create({text="Hyprland plugins : dynamic_cursors doesn't exist!", timeout=10000, icon=0})
 end

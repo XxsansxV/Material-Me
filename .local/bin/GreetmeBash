@@ -19,7 +19,7 @@ MAGENTA='\e[35m'
 RESET='\e[0m'
 
 # the greets are now sourced from a conf file
-config_file="${XDG_BIN_HOME:-$HOME/.local/bin}/bashGreets.conf"
+config_file="${XDG_CONFIG_HOME:-$HOME/.config/Material-Me}/bashGreets.conf"
 
 if [[ -f ${config_file} ]]; then
   source ${config_file}
